@@ -62,9 +62,9 @@ et chauffeurs statuts, retards)
 * **Super Chef de Ligne** : gère les Chefs de Ligne de sa ville uniquement, voit les stats de sa ville
 * **Admin syndicat** : tout sur sa zone (ligne = ville) - véhicules/chauffeurs/sanctions/contrôles/gestion des agents
 * **Agent terrain** : contrôles + création d’incidents + avertissements (selon règles)
-* **Propriétaire** : flotte + chauffeurs liés + versements + pannes (lecture/édition selon règles)
-* **Gérant** : mêmes droits que le propriétaire qui l'a choisir mais limité aux véhicules gérés et interdictions de proceder la vente d'un vehicules
-* **Chauffeur** : ses versements, ses pannes, ses notifications, tickets liés
+* **Propriétaire** : flotte + chauffeurs liés (création et gestion) + versements + pannes (lecture/édition selon règles)
+* **Gérant** : mêmes droits que le propriétaire qui l'a choisi mais limité aux véhicules gérés et **interdiction de procéder à la vente d'un véhicule**
+* **Chauffeur** : ses versements, ses pannes, ses notifications, tickets liés. **Créé et géré par le propriétaire du véhicule**
 * **Passager** : créer/suivre tickets (réclamation/objet perdu)
 
 ### 3.3 Structure Hiérarchique Détaillée
@@ -302,7 +302,56 @@ et ceux-ci devrons valider les recensement des agents pour la mise a jour de la 
 
 ---
 
-## 6) Données & structure (modèle logique)
+## 6) Application Mobile
+
+### 6.1 Objectif
+Faciliter l'accès et l'utilisation de la plateforme pour tous les utilisateurs, notamment les chauffeurs et agents terrain qui sont souvent en déplacement.
+
+### 6.2 Plateformes
+* **iOS** (iPhone/iPad)
+* **Android** (Smartphones/Tablettes)
+
+### 6.3 Fonctionnalités par Rôle
+
+#### Super Admin / Super Chef / Chef de Ligne
+* Dashboard avec KPIs
+* Validation des documents (OCR)
+* Gestion des sanctions
+* Contrôles terrain
+* Notifications push
+
+#### Propriétaire
+* Dashboard rentabilité
+* Suivi des versements
+* Déclaration de pannes
+* **Création et gestion des chauffeurs**
+* Upload de documents
+* Notifications push
+
+#### Chauffeur
+* Vue des versements
+* Déclaration de pannes
+* Notifications (conformité, sanctions)
+* **Confirmation d'affectation**
+* Upload de documents personnels
+
+#### Passager
+* Création de tickets
+* Suivi des réclamations
+* Déclaration d'objets perdus
+* Notifications
+
+### 6.4 Fonctionnalités Techniques
+* **PWA** (Progressive Web App) pour accès rapide
+* **Notifications Push** pour alertes importantes
+* **Mode hors-ligne** pour consulter certaines données
+* **Scan QR Code** pour identification rapide
+* **Upload photo** pour documents et pannes
+* **Géolocalisation** (optionnel, pour contrôles terrain)
+
+---
+
+## 7) Données & structure (modèle logique)
 
 **Entités principales :**
 * User (id, identité, contact)
@@ -328,7 +377,7 @@ et ceux-ci devrons valider les recensement des agents pour la mise a jour de la 
 
 ---
 
-## 7) Règles de gestion (business rules)
+## 8) Règles de gestion (business rules)
 
 ### Conformité documentaire
 * **Documents obligatoires** : Visite technique (6 mois), Patente (1 an), Carte stationnement (1 an), Assurance (1 mois)
@@ -355,7 +404,7 @@ et ceux-ci devrons valider les recensement des agents pour la mise a jour de la 
 
 ---
 
-## 8) Notifications
+## 9) Notifications
 
 ### Canaux
 * **In-app** (obligatoire)
@@ -378,14 +427,14 @@ et ceux-ci devrons valider les recensement des agents pour la mise a jour de la 
 
 ---
 
-## 9) Exigences non fonctionnelles
+## 10) Exigences non fonctionnelles
 * **Sécurité** : RBAC, isolation par syndicat, logs d’audit, protection des données.
 * **Performance** : Chargement < 2s sur mobile, pagination/filtres.
 * **Compatibilité** : Mobile first + desktop. PWA possible (V2).
 
 ---
 
-## 10) MVP (Version 1) vs V2
+## 11) MVP (Version 1) vs V2
 
 **MVP – Priorités :**
 1. Auth + rôles
@@ -414,7 +463,7 @@ et ceux-ci devrons valider les recensement des agents pour la mise a jour de la 
 
 ---
 
-## 12) Livrables attendus
+## 13) Livrables attendus
 
 1. **Spécifications techniques & Maquettes** : Diagrammes de la base de données (MCD/MLD) et maquettes UI/UX validées.
 2. **Code source** : Dépôt Git (versionning) documenté et structuré.
@@ -424,7 +473,7 @@ et ceux-ci devrons valider les recensement des agents pour la mise a jour de la 
 
 ---
 
-## 13) Macro-planning (Proposition pour le MVP)
+## 14) Macro-planning (Proposition pour le MVP)
 
 * **Phase 1 : Conception & Design** (2 - 3 semaines)
   * Parcours utilisateurs (User flows), maquettes (UI/UX), architecture de la base de données.
@@ -439,7 +488,7 @@ et ceux-ci devrons valider les recensement des agents pour la mise a jour de la 
 
 ---
 
-## 14) Conclusion et prochaines étapes
+## 15) Conclusion et prochaines étapes
 
 Ce cahier des charges constitue la feuille de route fondatrice du projet AfriMobilis (phase MVP). L’objectif est de structurer et digitaliser efficacement l'écosystème du taxi informel à Grand-Bassam en offrant de la transparence aux syndicats et aux propriétaires, un outil de suivi aux chauffeurs, et une plateforme sécurisée pour les passagers.
 

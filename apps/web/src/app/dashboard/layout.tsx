@@ -49,6 +49,12 @@ const PASSAGER_NAV = [
     { label: '🔍 Objets Perdus', href: '/objets' },
 ];
 
+const AGENT_TERRAIN_NAV = [
+    { label: '📊 Accueil', href: '/dashboard/agent' },
+    { label: '👮 Nouveau Contrôle', href: '/dashboard/controles/nouveau' },
+    { label: '📋 Mes Contrôles', href: '/dashboard/controles' },
+];
+
 const CHEF_LIGNE_NAV = [
     { label: '📊 Tableau de Bord', href: '/dashboard/chef-ligne' },
     { label: '👮 Agents Terrain', href: '/dashboard/chef-ligne?tab=agents' },
@@ -157,15 +163,20 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                 return SUPER_ADMIN_NAV;
             case 'super_chef_de_ligne':
                 return SUPER_CHEF_NAV;
+            case 'chef_de_ligne':
+            case 'chef_ligne':
+            case 'admin_syndicat':
+                return CHEF_LIGNE_NAV;
+            case 'agent_terrain':
+                return AGENT_TERRAIN_NAV;
             case 'proprietaire':
                 return PROPRIETAIRE_NAV;
+            case 'gerant':
+                return PROPRIETAIRE_NAV; // Gérant a les mêmes accès que propriétaire
             case 'chauffeur':
                 return CHAUFFEUR_NAV;
             case 'passager':
                 return PASSAGER_NAV;
-            case 'chef_ligne':
-            case 'admin_syndicat':
-                return CHEF_LIGNE_NAV;
             default:
                 return CHEF_LIGNE_NAV;
         }

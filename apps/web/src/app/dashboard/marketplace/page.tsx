@@ -266,9 +266,12 @@ export default function DashboardMarketplacePage() {
                     <Link href="/marketplace" style={{ padding: '0.75rem 1.5rem', background: 'var(--surface-main)', color: 'var(--text-main)', border: '1px solid var(--border)', borderRadius: '8px', fontWeight: 600 }}>
                         ← Naviguer sur le marché public
                     </Link>
-                    <Button onClick={() => setIsVenteModalOpen(true)} style={{ padding: '0.75rem 1.5rem', fontWeight: 600 }}>
-                        + Créer une annonce
-                    </Button>
+                    {/* Le gérant ne peut pas créer d'annonces (restriction CDC) */}
+                    {user?.role !== 'gerant' && (
+                        <Button onClick={() => setIsVenteModalOpen(true)} style={{ padding: '0.75rem 1.5rem', fontWeight: 600 }}>
+                            + Créer une annonce
+                        </Button>
+                    )}
                 </div>
             </div>
 
