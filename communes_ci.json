@@ -1,0 +1,1002 @@
+[
+    {
+        "nom": "Abengourou",
+        "region": "Inconnue",
+        "code": "ABE"
+    },
+    {
+        "nom": "Abidjan",
+        "region": "Inconnue",
+        "code": "ABI"
+    },
+    {
+        "nom": "Abobo",
+        "region": "Inconnue",
+        "code": "ABO"
+    },
+    {
+        "nom": "Aboisso",
+        "region": "Inconnue",
+        "code": "ABO"
+    },
+    {
+        "nom": "Adiaké",
+        "region": "Inconnue",
+        "code": "ADI"
+    },
+    {
+        "nom": "Adjamé",
+        "region": "Inconnue",
+        "code": "ADJ"
+    },
+    {
+        "nom": "Adzopé",
+        "region": "Inconnue",
+        "code": "ADZ"
+    },
+    {
+        "nom": "Afféry",
+        "region": "Inconnue",
+        "code": "AFF"
+    },
+    {
+        "nom": "Agboville",
+        "region": "Inconnue",
+        "code": "AGB"
+    },
+    {
+        "nom": "Agnibilékrou",
+        "region": "Inconnue",
+        "code": "AGN"
+    },
+    {
+        "nom": "Agou",
+        "region": "Inconnue",
+        "code": "AGO"
+    },
+    {
+        "nom": "Akoupé",
+        "region": "Inconnue",
+        "code": "AKO"
+    },
+    {
+        "nom": "Alépé",
+        "region": "Inconnue",
+        "code": "ALÉ"
+    },
+    {
+        "nom": "Anoumaba",
+        "region": "Inconnue",
+        "code": "ANO"
+    },
+    {
+        "nom": "Anyama",
+        "region": "Inconnue",
+        "code": "ANY"
+    },
+    {
+        "nom": "Arrah",
+        "region": "Inconnue",
+        "code": "ARR"
+    },
+    {
+        "nom": "Assinie",
+        "region": "Inconnue",
+        "code": "ASS"
+    },
+    {
+        "nom": "Assuéffry",
+        "region": "Inconnue",
+        "code": "ASS"
+    },
+    {
+        "nom": "Attécoubé",
+        "region": "Inconnue",
+        "code": "ATT"
+    },
+    {
+        "nom": "Attiegouakro",
+        "region": "Inconnue",
+        "code": "ATT"
+    },
+    {
+        "nom": "Ayamé",
+        "region": "Inconnue",
+        "code": "AYA"
+    },
+    {
+        "nom": "Azaguié",
+        "region": "Inconnue",
+        "code": "AZA"
+    },
+    {
+        "nom": "Bako",
+        "region": "Inconnue",
+        "code": "BAK"
+    },
+    {
+        "nom": "Bangolo",
+        "region": "Inconnue",
+        "code": "BAN"
+    },
+    {
+        "nom": "Bassawa",
+        "region": "Inconnue",
+        "code": "BAS"
+    },
+    {
+        "nom": "Bédiala",
+        "region": "Inconnue",
+        "code": "BÉD"
+    },
+    {
+        "nom": "Béoumi",
+        "region": "Inconnue",
+        "code": "BÉO"
+    },
+    {
+        "nom": "Béttié",
+        "region": "Inconnue",
+        "code": "BÉT"
+    },
+    {
+        "nom": "Biankouma",
+        "region": "Inconnue",
+        "code": "BIA"
+    },
+    {
+        "nom": "Bin-Houyé",
+        "region": "Inconnue",
+        "code": "BIN"
+    },
+    {
+        "nom": "Bingerville",
+        "region": "Inconnue",
+        "code": "BIN"
+    },
+    {
+        "nom": "Bloléquin",
+        "region": "Inconnue",
+        "code": "BLO"
+    },
+    {
+        "nom": "Bocanda",
+        "region": "Inconnue",
+        "code": "BOC"
+    },
+    {
+        "nom": "Bodokro",
+        "region": "Inconnue",
+        "code": "BOD"
+    },
+    {
+        "nom": "Bondoukou",
+        "region": "Inconnue",
+        "code": "BON"
+    },
+    {
+        "nom": "Bongouanou",
+        "region": "Inconnue",
+        "code": "BON"
+    },
+    {
+        "nom": "Boniérédougou",
+        "region": "Inconnue",
+        "code": "BON"
+    },
+    {
+        "nom": "Bonon",
+        "region": "Inconnue",
+        "code": "BON"
+    },
+    {
+        "nom": "Bonoua",
+        "region": "Inconnue",
+        "code": "BON"
+    },
+    {
+        "nom": "Booko",
+        "region": "Inconnue",
+        "code": "BOO"
+    },
+    {
+        "nom": "Borotou",
+        "region": "Inconnue",
+        "code": "BOR"
+    },
+    {
+        "nom": "Botro",
+        "region": "Inconnue",
+        "code": "BOT"
+    },
+    {
+        "nom": "Bouaflé",
+        "region": "Inconnue",
+        "code": "BOU"
+    },
+    {
+        "nom": "Bouaké",
+        "region": "Inconnue",
+        "code": "BOU"
+    },
+    {
+        "nom": "Bouna",
+        "region": "Inconnue",
+        "code": "BOU"
+    },
+    {
+        "nom": "Boundiali",
+        "region": "Inconnue",
+        "code": "BOU"
+    },
+    {
+        "nom": "Brobo",
+        "region": "Inconnue",
+        "code": "BRO"
+    },
+    {
+        "nom": "Buyo",
+        "region": "Inconnue",
+        "code": "BUY"
+    },
+    {
+        "nom": "Cocody",
+        "region": "Inconnue",
+        "code": "COC"
+    },
+    {
+        "nom": "Dabakala",
+        "region": "Inconnue",
+        "code": "DAB"
+    },
+    {
+        "nom": "Dabou",
+        "region": "Inconnue",
+        "code": "DAB"
+    },
+    {
+        "nom": "Daloa",
+        "region": "Inconnue",
+        "code": "DAL"
+    },
+    {
+        "nom": "Danané",
+        "region": "Inconnue",
+        "code": "DAN"
+    },
+    {
+        "nom": "Daoukro",
+        "region": "Inconnue",
+        "code": "DAO"
+    },
+    {
+        "nom": "Diabo",
+        "region": "Inconnue",
+        "code": "DIA"
+    },
+    {
+        "nom": "Dianra",
+        "region": "Inconnue",
+        "code": "DIA"
+    },
+    {
+        "nom": "Diawala",
+        "region": "Inconnue",
+        "code": "DIA"
+    },
+    {
+        "nom": "Didiévi",
+        "region": "Inconnue",
+        "code": "DID"
+    },
+    {
+        "nom": "Diégonéfla",
+        "region": "Inconnue",
+        "code": "DIÉ"
+    },
+    {
+        "nom": "Dikodougou",
+        "region": "Inconnue",
+        "code": "DIK"
+    },
+    {
+        "nom": "Dimbokro",
+        "region": "Inconnue",
+        "code": "DIM"
+    },
+    {
+        "nom": "Dioulatiédougou",
+        "region": "Inconnue",
+        "code": "DIO"
+    },
+    {
+        "nom": "Divo",
+        "region": "Inconnue",
+        "code": "DIV"
+    },
+    {
+        "nom": "Djebonoua",
+        "region": "Inconnue",
+        "code": "DJE"
+    },
+    {
+        "nom": "Djèkanou",
+        "region": "Inconnue",
+        "code": "DJÈ"
+    },
+    {
+        "nom": "Djibrosso",
+        "region": "Inconnue",
+        "code": "DJI"
+    },
+    {
+        "nom": "Doropo",
+        "region": "Inconnue",
+        "code": "DOR"
+    },
+    {
+        "nom": "Dualla",
+        "region": "Inconnue",
+        "code": "DUA"
+    },
+    {
+        "nom": "Duékoué",
+        "region": "Inconnue",
+        "code": "DUÉ"
+    },
+    {
+        "nom": "Ettrokro",
+        "region": "Inconnue",
+        "code": "ETT"
+    },
+    {
+        "nom": "Facobly",
+        "region": "Inconnue",
+        "code": "FAC"
+    },
+    {
+        "nom": "Ferkessédougou",
+        "region": "Inconnue",
+        "code": "FER"
+    },
+    {
+        "nom": "Foumbolo",
+        "region": "Inconnue",
+        "code": "FOU"
+    },
+    {
+        "nom": "Fresco",
+        "region": "Inconnue",
+        "code": "FRE"
+    },
+    {
+        "nom": "Fronan",
+        "region": "Inconnue",
+        "code": "FRO"
+    },
+    {
+        "nom": "Gagnoa",
+        "region": "Inconnue",
+        "code": "GAG"
+    },
+    {
+        "nom": "Gbeleban",
+        "region": "Inconnue",
+        "code": "GBE"
+    },
+    {
+        "nom": "Gboguhé",
+        "region": "Inconnue",
+        "code": "GBO"
+    },
+    {
+        "nom": "Gbon",
+        "region": "Inconnue",
+        "code": "GBO"
+    },
+    {
+        "nom": "Gbonné",
+        "region": "Inconnue",
+        "code": "GBO"
+    },
+    {
+        "nom": "Gohitafla",
+        "region": "Inconnue",
+        "code": "GOH"
+    },
+    {
+        "nom": "Goulia",
+        "region": "Inconnue",
+        "code": "GOU"
+    },
+    {
+        "nom": "Grabo",
+        "region": "Inconnue",
+        "code": "GRA"
+    },
+    {
+        "nom": "Grand-Bassam",
+        "region": "Inconnue",
+        "code": "GRA"
+    },
+    {
+        "nom": "Grand-Béréby",
+        "region": "Inconnue",
+        "code": "GRA"
+    },
+    {
+        "nom": "Grand-Lahou",
+        "region": "Inconnue",
+        "code": "GRA"
+    },
+    {
+        "nom": "Grand-Zattry",
+        "region": "Inconnue",
+        "code": "GRA"
+    },
+    {
+        "nom": "Guéyo",
+        "region": "Inconnue",
+        "code": "GUÉ"
+    },
+    {
+        "nom": "Guibéroua",
+        "region": "Inconnue",
+        "code": "GUI"
+    },
+    {
+        "nom": "Guiembé",
+        "region": "Inconnue",
+        "code": "GUI"
+    },
+    {
+        "nom": "Guiglo",
+        "region": "Inconnue",
+        "code": "GUI"
+    },
+    {
+        "nom": "Guintéguéla",
+        "region": "Inconnue",
+        "code": "GUI"
+    },
+    {
+        "nom": "Guitry",
+        "region": "Inconnue",
+        "code": "GUI"
+    },
+    {
+        "nom": "Hiré",
+        "region": "Inconnue",
+        "code": "HIR"
+    },
+    {
+        "nom": "Issia",
+        "region": "Inconnue",
+        "code": "ISS"
+    },
+    {
+        "nom": "Jacqueville",
+        "region": "Inconnue",
+        "code": "JAC"
+    },
+    {
+        "nom": "Kanakono",
+        "region": "Inconnue",
+        "code": "KAN"
+    },
+    {
+        "nom": "Kani",
+        "region": "Inconnue",
+        "code": "KAN"
+    },
+    {
+        "nom": "Kaniasso",
+        "region": "Inconnue",
+        "code": "KAN"
+    },
+    {
+        "nom": "Karakoro",
+        "region": "Inconnue",
+        "code": "KAR"
+    },
+    {
+        "nom": "Kasséré",
+        "region": "Inconnue",
+        "code": "KAS"
+    },
+    {
+        "nom": "Katiola",
+        "region": "Inconnue",
+        "code": "KAT"
+    },
+    {
+        "nom": "Kokoumbo",
+        "region": "Inconnue",
+        "code": "KOK"
+    },
+    {
+        "nom": "Kolia",
+        "region": "Inconnue",
+        "code": "KOL"
+    },
+    {
+        "nom": "Komborodougou",
+        "region": "Inconnue",
+        "code": "KOM"
+    },
+    {
+        "nom": "Kong",
+        "region": "Inconnue",
+        "code": "KON"
+    },
+    {
+        "nom": "Kongasso",
+        "region": "Inconnue",
+        "code": "KON"
+    },
+    {
+        "nom": "Koonan",
+        "region": "Inconnue",
+        "code": "KOO"
+    },
+    {
+        "nom": "Korhogo",
+        "region": "Inconnue",
+        "code": "KOR"
+    },
+    {
+        "nom": "Koro",
+        "region": "Inconnue",
+        "code": "KOR"
+    },
+    {
+        "nom": "Kouassi-Datékro",
+        "region": "Inconnue",
+        "code": "KOU"
+    },
+    {
+        "nom": "Kouassi-Kouassikro",
+        "region": "Inconnue",
+        "code": "KOU"
+    },
+    {
+        "nom": "Kouibly",
+        "region": "Inconnue",
+        "code": "KOU"
+    },
+    {
+        "nom": "Koumassi",
+        "region": "Inconnue",
+        "code": "KOU"
+    },
+    {
+        "nom": "Koumbala",
+        "region": "Inconnue",
+        "code": "KOU"
+    },
+    {
+        "nom": "Koun-Fao",
+        "region": "Inconnue",
+        "code": "KOU"
+    },
+    {
+        "nom": "Kounahiri",
+        "region": "Inconnue",
+        "code": "KOU"
+    },
+    {
+        "nom": "Kouto",
+        "region": "Inconnue",
+        "code": "KOU"
+    },
+    {
+        "nom": "Lakota",
+        "region": "Inconnue",
+        "code": "LAK"
+    },
+    {
+        "nom": "Logoualé",
+        "region": "Inconnue",
+        "code": "LOG"
+    },
+    {
+        "nom": "M'bahiakro",
+        "region": "Inconnue",
+        "code": "M'B"
+    },
+    {
+        "nom": "M'batto",
+        "region": "Inconnue",
+        "code": "M'B"
+    },
+    {
+        "nom": "M'bengué",
+        "region": "Inconnue",
+        "code": "M'B"
+    },
+    {
+        "nom": "Madinani",
+        "region": "Inconnue",
+        "code": "MAD"
+    },
+    {
+        "nom": "Maféré",
+        "region": "Inconnue",
+        "code": "MAF"
+    },
+    {
+        "nom": "Man",
+        "region": "Inconnue",
+        "code": "MAN"
+    },
+    {
+        "nom": "Mankono",
+        "region": "Inconnue",
+        "code": "MAN"
+    },
+    {
+        "nom": "Marcory",
+        "region": "Inconnue",
+        "code": "MAR"
+    },
+    {
+        "nom": "Massala",
+        "region": "Inconnue",
+        "code": "MAS"
+    },
+    {
+        "nom": "Mayo",
+        "region": "Inconnue",
+        "code": "MAY"
+    },
+    {
+        "nom": "Méagui",
+        "region": "Inconnue",
+        "code": "MÉA"
+    },
+    {
+        "nom": "Minignan",
+        "region": "Inconnue",
+        "code": "MIN"
+    },
+    {
+        "nom": "Morondo",
+        "region": "Inconnue",
+        "code": "MOR"
+    },
+    {
+        "nom": "N'douci",
+        "region": "Inconnue",
+        "code": "N'D"
+    },
+    {
+        "nom": "Napié",
+        "region": "Inconnue",
+        "code": "NAP"
+    },
+    {
+        "nom": "Nassian",
+        "region": "Inconnue",
+        "code": "NAS"
+    },
+    {
+        "nom": "Niablé",
+        "region": "Inconnue",
+        "code": "NIA"
+    },
+    {
+        "nom": "Niakaramandougou",
+        "region": "Inconnue",
+        "code": "NIA"
+    },
+    {
+        "nom": "Niéllé",
+        "region": "Inconnue",
+        "code": "NIÉ"
+    },
+    {
+        "nom": "Niofoin",
+        "region": "Inconnue",
+        "code": "NIO"
+    },
+    {
+        "nom": "Odienné",
+        "region": "Inconnue",
+        "code": "ODI"
+    },
+    {
+        "nom": "Ouangolodougou",
+        "region": "Inconnue",
+        "code": "OUA"
+    },
+    {
+        "nom": "Ouaninou",
+        "region": "Inconnue",
+        "code": "OUA"
+    },
+    {
+        "nom": "Ouellé",
+        "region": "Inconnue",
+        "code": "OUE"
+    },
+    {
+        "nom": "Oumé",
+        "region": "Inconnue",
+        "code": "OUM"
+    },
+    {
+        "nom": "Ouragahio",
+        "region": "Inconnue",
+        "code": "OUR"
+    },
+    {
+        "nom": "Plateau",
+        "region": "Inconnue",
+        "code": "PLA"
+    },
+    {
+        "nom": "Port-Bouët",
+        "region": "Inconnue",
+        "code": "POR"
+    },
+    {
+        "nom": "Prikro",
+        "region": "Inconnue",
+        "code": "PRI"
+    },
+    {
+        "nom": "Rubino",
+        "region": "Inconnue",
+        "code": "RUB"
+    },
+    {
+        "nom": "Saïoua",
+        "region": "Inconnue",
+        "code": "SAÏ"
+    },
+    {
+        "nom": "Sakassou",
+        "region": "Inconnue",
+        "code": "SAK"
+    },
+    {
+        "nom": "Samatiguila",
+        "region": "Inconnue",
+        "code": "SAM"
+    },
+    {
+        "nom": "San Pedro",
+        "region": "Inconnue",
+        "code": "SAN"
+    },
+    {
+        "nom": "Sandégué",
+        "region": "Inconnue",
+        "code": "SAN"
+    },
+    {
+        "nom": "Sangouiné",
+        "region": "Inconnue",
+        "code": "SAN"
+    },
+    {
+        "nom": "Sarhala",
+        "region": "Inconnue",
+        "code": "SAR"
+    },
+    {
+        "nom": "Sassandra",
+        "region": "Inconnue",
+        "code": "SAS"
+    },
+    {
+        "nom": "Satama-Sokoro",
+        "region": "Inconnue",
+        "code": "SAT"
+    },
+    {
+        "nom": "Satama-Sokoura",
+        "region": "Inconnue",
+        "code": "SAT"
+    },
+    {
+        "nom": "Séguéla",
+        "region": "Inconnue",
+        "code": "SÉG"
+    },
+    {
+        "nom": "Séguelon",
+        "region": "Inconnue",
+        "code": "SÉG"
+    },
+    {
+        "nom": "Seydougou",
+        "region": "Inconnue",
+        "code": "SEY"
+    },
+    {
+        "nom": "Sifié",
+        "region": "Inconnue",
+        "code": "SIF"
+    },
+    {
+        "nom": "Sikensi",
+        "region": "Inconnue",
+        "code": "SIK"
+    },
+    {
+        "nom": "Sinématiali",
+        "region": "Inconnue",
+        "code": "SIN"
+    },
+    {
+        "nom": "Sinfra",
+        "region": "Inconnue",
+        "code": "SIN"
+    },
+    {
+        "nom": "Sipilou",
+        "region": "Inconnue",
+        "code": "SIP"
+    },
+    {
+        "nom": "Sirasso",
+        "region": "Inconnue",
+        "code": "SIR"
+    },
+    {
+        "nom": "Songon",
+        "region": "Inconnue",
+        "code": "SON"
+    },
+    {
+        "nom": "Soubré",
+        "region": "Inconnue",
+        "code": "SOU"
+    },
+    {
+        "nom": "Taabo",
+        "region": "Inconnue",
+        "code": "TAA"
+    },
+    {
+        "nom": "Tabou",
+        "region": "Inconnue",
+        "code": "TAB"
+    },
+    {
+        "nom": "Tafiré",
+        "region": "Inconnue",
+        "code": "TAF"
+    },
+    {
+        "nom": "Taï",
+        "region": "Inconnue",
+        "code": "TAÏ"
+    },
+    {
+        "nom": "Tanda",
+        "region": "Inconnue",
+        "code": "TAN"
+    },
+    {
+        "nom": "Téhini",
+        "region": "Inconnue",
+        "code": "TÉH"
+    },
+    {
+        "nom": "Tengréla",
+        "region": "Inconnue",
+        "code": "TEN"
+    },
+    {
+        "nom": "Tiapoum",
+        "region": "Inconnue",
+        "code": "TIA"
+    },
+    {
+        "nom": "Tiassalé",
+        "region": "Inconnue",
+        "code": "TIA"
+    },
+    {
+        "nom": "Tié N'Diékro",
+        "region": "Inconnue",
+        "code": "TIÉ"
+    },
+    {
+        "nom": "Tiébissou",
+        "region": "Inconnue",
+        "code": "TIÉ"
+    },
+    {
+        "nom": "Tiémé",
+        "region": "Inconnue",
+        "code": "TIÉ"
+    },
+    {
+        "nom": "Tiémélékro",
+        "region": "Inconnue",
+        "code": "TIÉ"
+    },
+    {
+        "nom": "Tieningboué",
+        "region": "Inconnue",
+        "code": "TIE"
+    },
+    {
+        "nom": "Tienko",
+        "region": "Inconnue",
+        "code": "TIE"
+    },
+    {
+        "nom": "Tioroniaradougou",
+        "region": "Inconnue",
+        "code": "TIO"
+    },
+    {
+        "nom": "Touba",
+        "region": "Inconnue",
+        "code": "TOU"
+    },
+    {
+        "nom": "Toulépleu",
+        "region": "Inconnue",
+        "code": "TOU"
+    },
+    {
+        "nom": "Toumodi",
+        "region": "Inconnue",
+        "code": "TOU"
+    },
+    {
+        "nom": "Transua",
+        "region": "Inconnue",
+        "code": "TRA"
+    },
+    {
+        "nom": "Treichville",
+        "region": "Inconnue",
+        "code": "TRE"
+    },
+    {
+        "nom": "Vavoua",
+        "region": "Inconnue",
+        "code": "VAV"
+    },
+    {
+        "nom": "Yakassé-Attobrou",
+        "region": "Inconnue",
+        "code": "YAK"
+    },
+    {
+        "nom": "Yamoussoukro",
+        "region": "Inconnue",
+        "code": "YAM"
+    },
+    {
+        "nom": "Yopougon",
+        "region": "Inconnue",
+        "code": "YOP"
+    },
+    {
+        "nom": "Zikisso",
+        "region": "Inconnue",
+        "code": "ZIK"
+    },
+    {
+        "nom": "Zouan-Hounien",
+        "region": "Inconnue",
+        "code": "ZOU"
+    },
+    {
+        "nom": "Zoukougbeu",
+        "region": "Inconnue",
+        "code": "ZOU"
+    },
+    {
+        "nom": "Zuénoula",
+        "region": "Inconnue",
+        "code": "ZUÉ"
+    }
+]

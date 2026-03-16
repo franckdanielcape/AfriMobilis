@@ -1,0 +1,440 @@
+/* ========================================
+   DASHBOARD FIXES - Styles scopés au dashboard
+   Ce fichier ne doit affecter QUE le contenu du dashboard
+   ======================================== */
+
+/* 
+   IMPORTANT: Tous les sélecteurs sont préfixés avec .dashboard-container
+   pour éviter que les styles ne "fuient" vers les autres pages.
+*/
+
+/* Couleur de base du texte dans le dashboard */
+.dashboard-container {
+  color: var(--text-main);
+}
+
+/* ========================================
+   TYPOGRAPHIE DANS LE DASHBOARD
+   ======================================== */
+
+.dashboard-container h1,
+.dashboard-container h2,
+.dashboard-container h3,
+.dashboard-container h4,
+.dashboard-container h5,
+.dashboard-container h6 {
+  color: var(--text-main);
+}
+
+.dashboard-container p {
+  color: var(--text-secondary);
+}
+
+/* ========================================
+   CARTES ET PANNEAUX
+   ======================================== */
+
+/* Sur fond blanc/surface explicite, texte foncé */
+.dashboard-container div[style*="background: white"],
+.dashboard-container div[style*="background-color: white"],
+.dashboard-container div[style*="background: #fff"],
+.dashboard-container div[style*="background-color: #fff"],
+.dashboard-container div[style*="background: var(--surface-main)"] {
+  color: var(--text-main);
+}
+
+.dashboard-container div[style*="background: white"] h1,
+.dashboard-container div[style*="background: white"] h2,
+.dashboard-container div[style*="background: white"] h3,
+.dashboard-container div[style*="background: white"] p,
+.dashboard-container div[style*="background-color: white"] h1,
+.dashboard-container div[style*="background-color: white"] h2,
+.dashboard-container div[style*="background-color: white"] h3,
+.dashboard-container div[style*="background-color: white"] p {
+  color: var(--text-main);
+}
+
+/* Glass panel dans le dashboard */
+.dashboard-container .glass-panel {
+  color: var(--text-main);
+}
+
+.dashboard-container .glass-panel h1,
+.dashboard-container .glass-panel h2,
+.dashboard-container .glass-panel h3,
+.dashboard-container .glass-panel h4 {
+  color: var(--text-main);
+}
+
+.dashboard-container .glass-panel p {
+  color: var(--text-secondary);
+}
+
+/* ========================================
+   FORMULAIRES DANS LE DASHBOARD
+   ======================================== */
+
+.dashboard-container input,
+.dashboard-container textarea,
+.dashboard-container select {
+  color: var(--text-main);
+  background-color: var(--surface-main);
+  border: 1px solid var(--border);
+}
+
+.dashboard-container input::placeholder,
+.dashboard-container textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.dashboard-container label {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* ========================================
+   BOUTONS DANS LE DASHBOARD
+   ======================================== */
+
+/* Boutons avec fond coloré - texte blanc */
+.dashboard-container button[style*="background:"]:not([style*="background: transparent"]),
+.dashboard-container button[style*="background-color:"]:not([style*="background-color: transparent"]),
+.dashboard-container button[style*="background-color: var(--primary"],
+.dashboard-container button[style*="background: var(--primary"] {
+  color: white;
+}
+
+/* ========================================
+   SIDEBAR (fond foncé #1e293b)
+   ======================================== */
+
+/* La sidebar a un fond foncé, donc texte clair */
+.dashboard-container aside,
+.dashboard-container aside *,
+.dashboard-container nav[style*="background: #1e293b"] *,
+.dashboard-container nav[style*="background-color: #1e293b"] *,
+.dashboard-container [style*="background:#1e293b"] *,
+.dashboard-container [style*="background-color:#1e293b"] * {
+  color: white;
+}
+
+/* Liens dans la sidebar */
+.dashboard-container aside a,
+.dashboard-container nav[style*="background: #1e293b"] a,
+.dashboard-container nav[style*="background-color: #1e293b"] a {
+  color: white;
+}
+
+/* Lien actif dans la sidebar (couleur bleue claire) */
+.dashboard-container aside a[style*="color: #38bdf8"],
+.dashboard-container nav[style*="background: #1e293b"] a[style*="color: #38bdf8"] {
+  color: #38bdf8;
+}
+
+/* ========================================
+   TABLEAUX DANS LE DASHBOARD
+   ======================================== */
+
+.dashboard-container table {
+  color: var(--text-main);
+}
+
+.dashboard-container th {
+  color: var(--text-secondary);
+  background-color: var(--surface-hover);
+}
+
+.dashboard-container td {
+  color: var(--text-main);
+  border-bottom-color: var(--border);
+}
+
+/* ========================================
+   MODALS ET OVERLAYS
+   ======================================== */
+
+.dashboard-container [style*="position: fixed"] {
+  color: var(--text-main);
+}
+
+/* ========================================
+   BADGES ET ÉTIQUETTES
+   ======================================== */
+
+.dashboard-container .badge,
+.dashboard-container span[style*="background:"] {
+  /* Les badges gardent leur couleur de texte définie inline */
+}
+
+/* ========================================
+   RESPONSIVE DESIGN - DASHBOARD
+   ======================================== */
+
+/* Mobile First - Sidebar collapsible */
+@media (max-width: 767px) {
+  /* Sidebar hidden by default on mobile */
+  .dashboard-container aside,
+  .dashboard-container nav[style*="background: #1e293b"],
+  .dashboard-container nav[style*="background-color: #1e293b"] {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    height: 100vh;
+    width: 260px;
+    z-index: 1000;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+  }
+  
+  /* When sidebar is open */
+  .dashboard-container aside.open,
+  .dashboard-container nav.open[style*="background: #1e293b"],
+  .dashboard-container nav.open[style*="background-color: #1e293b"] {
+    left: 0;
+  }
+  
+  /* Overlay when sidebar is open */
+  .dashboard-container .sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+  }
+  
+  .dashboard-container .sidebar-overlay.open {
+    display: block;
+  }
+  
+  /* Main content takes full width on mobile */
+  .dashboard-container main {
+    padding: 1rem !important;
+    margin-left: 0 !important;
+  }
+  
+  /* Header adjustments */
+  .dashboard-container header {
+    padding: 0.75rem 1rem !important;
+  }
+  
+  /* Mobile menu button */
+  .dashboard-container .mobile-menu-btn {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--text-main);
+  }
+  
+  /* Tables - horizontal scroll */
+  .dashboard-container .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .dashboard-container table {
+    min-width: 600px;
+  }
+  
+  /* Cards grid - single column on mobile */
+  .dashboard-container .cards-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Stats grid - 2 columns on small screens */
+  .dashboard-container .stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.75rem !important;
+  }
+  
+  /* Form layouts - stack vertically */
+  .dashboard-container form .form-row {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+  
+  /* Modal adjustments */
+  .dashboard-container [style*="position: fixed"] {
+    padding: 1rem !important;
+  }
+  
+  .dashboard-container [style*="position: fixed"] > div {
+    max-width: 100% !important;
+    max-height: 90vh !important;
+    overflow-y: auto;
+  }
+}
+
+/* Small phones */
+@media (max-width: 360px) {
+  .dashboard-container main {
+    padding: 0.75rem !important;
+  }
+  
+  .dashboard-container .stats-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .dashboard-container aside,
+  .dashboard-container nav[style*="background: #1e293b"],
+  .dashboard-container nav[style*="background-color: #1e293b"] {
+    width: 220px;
+  }
+  
+  .dashboard-container main {
+    padding: 1.5rem !important;
+  }
+  
+  .dashboard-container .cards-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .dashboard-container .stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .dashboard-container .mobile-menu-btn {
+    display: none !important;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .dashboard-container aside,
+  .dashboard-container nav[style*="background: #1e293b"],
+  .dashboard-container nav[style*="background-color: #1e293b"] {
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+  }
+  
+  .dashboard-container main {
+    margin-left: 250px;
+    padding: 2rem !important;
+  }
+  
+  .dashboard-container .cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  }
+  
+  .dashboard-container .stats-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+  
+  .dashboard-container .mobile-menu-btn {
+    display: none !important;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1440px) {
+  .dashboard-container main {
+    max-width: 1400px;
+    margin-left: 250px;
+    margin-right: auto;
+  }
+}
+
+/* ========================================
+   UTILITY CLASSES FOR RESPONSIVE
+   ======================================== */
+
+/* Hide on mobile */
+@media (max-width: 767px) {
+  .dashboard-container .hide-mobile {
+    display: none !important;
+  }
+}
+
+/* Hide on tablet and up */
+@media (min-width: 768px) {
+  .dashboard-container .show-mobile {
+    display: none !important;
+  }
+}
+
+/* Responsive padding */
+.dashboard-container .responsive-padding {
+  padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  .dashboard-container .responsive-padding {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dashboard-container .responsive-padding {
+    padding: 2rem;
+  }
+}
+
+/* Responsive grid */
+.dashboard-container .responsive-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .dashboard-container .responsive-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dashboard-container .responsive-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .dashboard-container .responsive-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY - REDUCED MOTION
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .dashboard-container aside,
+  .dashboard-container nav[style*="background: #1e293b"],
+  .dashboard-container nav[style*="background-color: #1e293b"] {
+    transition: none;
+  }
+}
+
+/* ========================================
+   TOUCH DEVICE OPTIMIZATIONS
+   ======================================== */
+
+@media (hover: none) and (pointer: coarse) {
+  .dashboard-container button,
+  .dashboard-container a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .dashboard-container aside a,
+  .dashboard-container nav a {
+    padding: 0.875rem 1rem;
+  }
+}

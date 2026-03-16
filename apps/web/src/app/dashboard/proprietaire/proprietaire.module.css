@@ -1,0 +1,380 @@
+.container {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: var(--text-main);
+}
+
+.header p {
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.quickActions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.quickActions a {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.quickActions a:first-child {
+  background: var(--primary-color);
+  color: var(--surface-main);
+}
+
+.quickActions a:last-child {
+  background: var(--surface-main);
+  color: var(--text-main);
+  border: 1px solid var(--border);
+}
+
+/* Alertes */
+.alerts {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.alert.warning {
+  background: var(--warning-light);
+  color: var(--badge-warning-text);
+  border: 1px solid #fbbf24;
+}
+
+.alert.error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #f87171;
+}
+
+.alert a {
+  margin-left: auto;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Stats Grid */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.statCard {
+  background: var(--surface-main);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid var(--border);
+}
+
+.statIcon {
+  font-size: 2rem;
+  padding: 0.5rem;
+  background: var(--surface-main);
+  border-radius: 8px;
+}
+
+.statContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+.progressBar {
+  height: 6px;
+  background: var(--surface-main);
+  border-radius: 3px;
+  margin-top: 0.75rem;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--primary-color);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.progressLabel {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+/* Main Grid */
+.mainGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.section {
+  background: var(--surface-main);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.sectionHeader h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-main);
+}
+
+.sectionHeader a {
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* Véhicules List */
+.vehiculesList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.vehiculeCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--surface-main);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.vehiculeIcon {
+  font-size: 1.5rem;
+}
+
+.vehiculeInfo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.vehiculePlate {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-main);
+}
+
+.vehiculeModel {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge.actif {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badge.inactif {
+  background: var(--surface-hover);
+  color: var(--text-muted);
+}
+
+.badge.maintenance {
+  background: var(--warning-light);
+  color: var(--badge-warning-text);
+}
+
+/* Activité */
+.activiteList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.activiteItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.activiteItem:last-child {
+  border-bottom: none;
+}
+
+.activiteIcon {
+  font-size: 1.25rem;
+}
+
+.activiteContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.activiteText {
+  font-size: 0.9rem;
+  color: var(--text-main);
+}
+
+.activiteDate {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Empty State */
+.emptyState {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-muted);
+}
+
+.emptyHint {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+/* Quick Menu */
+.quickMenu {
+  background: var(--surface-main);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+}
+
+.quickMenu h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: var(--text-main);
+}
+
+.quickLinks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.quickLink {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--surface-main);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 500;
+  transition: all 0.2s;
+  border: 1px solid var(--border);
+}
+
+.quickLink:hover {
+  background: var(--surface-hover);
+  transform: translateY(-2px);
+}
+
+.quickLink span:first-child {
+  font-size: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .header {
+    flex-direction: column;
+  }
+  
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .quickActions {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .quickActions a {
+    text-align: center;
+  }
+}

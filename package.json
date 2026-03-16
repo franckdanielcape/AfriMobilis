@@ -1,0 +1,24 @@
+{
+  "name": "afrimobilis-monorepo",
+  "private": true,
+  "packageManager": "npm@9.8.1",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean"
+  },
+  "devDependencies": {
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}

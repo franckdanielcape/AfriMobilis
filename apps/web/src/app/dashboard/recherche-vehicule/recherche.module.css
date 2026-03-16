@@ -1,0 +1,357 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.header {
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin: 0 0 0.5rem 0;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Search Box */
+.searchBox {
+    background: var(--surface-main);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1.5rem;
+}
+
+.searchForm {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.inputGroup {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.inputGroup label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-main);
+}
+
+.searchInput {
+    font-size: 1.1rem;
+    padding: 0.75rem 1rem;
+    text-transform: uppercase;
+}
+
+.searchButton {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+/* Error Box */
+.errorBox {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    color: #991b1b;
+    margin-bottom: 1.5rem;
+}
+
+.errorIcon {
+    font-size: 1.25rem;
+}
+
+/* Result Card */
+.resultCard {
+    background: var(--surface-main);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.resultHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-bottom: 1px solid var(--border);
+}
+
+.resultHeader h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin: 0;
+}
+
+.badge {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.badge.actif {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.badge.en_attente_documents {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.badge.suspendu,
+.badge.non_conforme {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* Vehicle Info */
+.vehicleInfo {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.vehicleInfo h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin: 0 0 1rem 0;
+}
+
+.infoGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.infoItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.value {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-main);
+}
+
+/* Contacts Section */
+.contactsSection {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.contactsSection h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin: 0 0 1rem 0;
+}
+
+.contactCard {
+    background: var(--surface-hover);
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+}
+
+.contactCard:last-child {
+    margin-bottom: 0;
+}
+
+.contactHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.contactIcon {
+    font-size: 1.25rem;
+}
+
+.contactHeader h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contactName {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin: 0;
+}
+
+.contactPhone {
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contactPhone:hover {
+    text-decoration: underline;
+}
+
+.contactActions {
+    margin-top: 0.75rem;
+}
+
+.whatsappBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #25d366;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.whatsappBtn:hover {
+    background: #128c7e;
+}
+
+.noContact {
+    color: var(--text-muted);
+    font-style: italic;
+    margin: 0;
+}
+
+/* Documents Section */
+.documentsSection {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.documentsSection h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin: 0 0 1rem 0;
+}
+
+.documentsList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.docItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: var(--surface-hover);
+    border-radius: 6px;
+}
+
+.docType {
+    font-size: 0.9rem;
+    color: var(--text-main);
+}
+
+.docStatus {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.docStatus.valide {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.docStatus.en_attente {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.docStatus.expire {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* Actions Section */
+.actionsSection {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Empty State */
+.emptyState {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .searchForm {
+        flex-direction: column;
+    }
+
+    .searchButton {
+        width: 100%;
+    }
+
+    .infoGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .resultHeader {
+        flex-direction: column;
+        gap: 0.75rem;
+        text-align: center;
+    }
+}

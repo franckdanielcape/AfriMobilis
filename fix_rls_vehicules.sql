@@ -1,0 +1,2 @@
+-- FIX RLS pour véhicules
+ALTER TABLE vehicules DISABLE ROW LEVEL SECURITY;

@@ -1,0 +1,992 @@
+[
+    {
+        "nom": "Abengourou",
+        "region": "Moyen Comoe  ",
+        "code": "ABE"
+    },
+    {
+        "nom": "Abobo",
+        "region": "Lagunes",
+        "code": "ABO"
+    },
+    {
+        "nom": "Aboisso",
+        "region": "Sud-comoe",
+        "code": "ABO"
+    },
+    {
+        "nom": "Adiaké",
+        "region": "Sud-comoe",
+        "code": "ADI"
+    },
+    {
+        "nom": "Adjamé",
+        "region": "Lagunes",
+        "code": "ADJ"
+    },
+    {
+        "nom": "Adzopé",
+        "region": "Agneby",
+        "code": "ADZ"
+    },
+    {
+        "nom": "Afféry",
+        "region": "Agneby",
+        "code": "AFF"
+    },
+    {
+        "nom": "Agboville",
+        "region": "Agneby",
+        "code": "AGB"
+    },
+    {
+        "nom": "Agnibilékrou",
+        "region": "Moyen Comoe  ",
+        "code": "AGN"
+    },
+    {
+        "nom": "Agou",
+        "region": "Agneby",
+        "code": "AGO"
+    },
+    {
+        "nom": "Akoupé",
+        "region": "Agneby",
+        "code": "AKO"
+    },
+    {
+        "nom": "Alépé",
+        "region": "Lagunes",
+        "code": "ALÉ"
+    },
+    {
+        "nom": "Anoumaba",
+        "region": "N'zi Comoe",
+        "code": "ANO"
+    },
+    {
+        "nom": "Anyama",
+        "region": "Lagunes",
+        "code": "ANY"
+    },
+    {
+        "nom": "Arrah",
+        "region": "N'zi Comoe",
+        "code": "ARR"
+    },
+    {
+        "nom": "Assuefry",
+        "region": "Zanzan",
+        "code": "ASS"
+    },
+    {
+        "nom": "Attecoubé",
+        "region": "Lagunes",
+        "code": "ATT"
+    },
+    {
+        "nom": "Ayamé",
+        "region": "Sud-comoe",
+        "code": "AYA"
+    },
+    {
+        "nom": "Azaguié",
+        "region": "Agneby",
+        "code": "AZA"
+    },
+    {
+        "nom": "Bako",
+        "region": "Denguele",
+        "code": "BAK"
+    },
+    {
+        "nom": "Bangolo",
+        "region": "Montagnes",
+        "code": "BAN"
+    },
+    {
+        "nom": "Banguera",
+        "region": "N'zi Comoe",
+        "code": "BAN"
+    },
+    {
+        "nom": "Bassawa",
+        "region": "Vallee Du Bandama",
+        "code": "BAS"
+    },
+    {
+        "nom": "Bediala",
+        "region": "Haut-sassandra",
+        "code": "BED"
+    },
+    {
+        "nom": "Beoumi",
+        "region": "Vallee Du Bandama",
+        "code": "BEO"
+    },
+    {
+        "nom": "Bettié",
+        "region": "Moyen Comoe  ",
+        "code": "BET"
+    },
+    {
+        "nom": "Biankouma",
+        "region": "Montagnes",
+        "code": "BIA"
+    },
+    {
+        "nom": "Bin-Houyé",
+        "region": "Montagnes",
+        "code": "BIN"
+    },
+    {
+        "nom": "Bingerville",
+        "region": "Lagunes",
+        "code": "BIN"
+    },
+    {
+        "nom": "Bloléquin",
+        "region": "Moyen Cavally",
+        "code": "BLO"
+    },
+    {
+        "nom": "Bocanda",
+        "region": "N'zi Comoe",
+        "code": "BOC"
+    },
+    {
+        "nom": "Bodokro",
+        "region": "Vallee Du Bandama",
+        "code": "BOD"
+    },
+    {
+        "nom": "Bondoukou",
+        "region": "Zanzan",
+        "code": "BON"
+    },
+    {
+        "nom": "Bongouanou",
+        "region": "N'zi Comoe",
+        "code": "BON"
+    },
+    {
+        "nom": "Bonieredougou",
+        "region": "Vallee Du Bandama",
+        "code": "BON"
+    },
+    {
+        "nom": "Bonon",
+        "region": "Marahoue",
+        "code": "BON"
+    },
+    {
+        "nom": "Bonoua",
+        "region": "Sud-comoe",
+        "code": "BON"
+    },
+    {
+        "nom": "Booko",
+        "region": "Baffing",
+        "code": "BOO"
+    },
+    {
+        "nom": "Borotou",
+        "region": "Baffing",
+        "code": "BOR"
+    },
+    {
+        "nom": "Botro",
+        "region": "Vallee Du Bandama",
+        "code": "BOT"
+    },
+    {
+        "nom": "Bouaflé",
+        "region": "Marahoue",
+        "code": "BOU"
+    },
+    {
+        "nom": "Bouaké",
+        "region": "Vallee Du Bandama",
+        "code": "BOU"
+    },
+    {
+        "nom": "Bouna",
+        "region": "Zanzan",
+        "code": "BOU"
+    },
+    {
+        "nom": "Boundiali",
+        "region": "Savanes",
+        "code": "BOU"
+    },
+    {
+        "nom": "Brobo",
+        "region": "Vallee Du Bandama",
+        "code": "BRO"
+    },
+    {
+        "nom": "Buyo",
+        "region": " Bas-sassandra",
+        "code": "BUY"
+    },
+    {
+        "nom": "Cocody",
+        "region": "Lagunes",
+        "code": "COC"
+    },
+    {
+        "nom": "Dabakala",
+        "region": "Vallee Du Bandama",
+        "code": "DAB"
+    },
+    {
+        "nom": "Dabou",
+        "region": "Lagunes",
+        "code": "DAB"
+    },
+    {
+        "nom": "Daloa",
+        "region": "Haut-sassandra",
+        "code": "DAL"
+    },
+    {
+        "nom": "Danané",
+        "region": "Montagnes",
+        "code": "DAN"
+    },
+    {
+        "nom": "Daoukro",
+        "region": "N'zi Comoe",
+        "code": "DAO"
+    },
+    {
+        "nom": "Diabo",
+        "region": "Vallee Du Bandama",
+        "code": "DIA"
+    },
+    {
+        "nom": "Dianra",
+        "region": "Worodougou",
+        "code": "DIA"
+    },
+    {
+        "nom": "Diawala",
+        "region": "Savanes",
+        "code": "DIA"
+    },
+    {
+        "nom": "Didiévi",
+        "region": "Lacs ",
+        "code": "DID"
+    },
+    {
+        "nom": "Diégonéfla",
+        "region": "Fromager",
+        "code": "DIÉ"
+    },
+    {
+        "nom": "Dikodougou",
+        "region": "Savanes",
+        "code": "DIK"
+    },
+    {
+        "nom": "Dimbokro",
+        "region": "N'zi Comoe",
+        "code": "DIM"
+    },
+    {
+        "nom": "Dioulatiédougou",
+        "region": "Denguele",
+        "code": "DIO"
+    },
+    {
+        "nom": "Divo",
+        "region": " Sud-bandama",
+        "code": "DIV"
+    },
+    {
+        "nom": "Djebonoua",
+        "region": "Vallee Du Bandama",
+        "code": "DJE"
+    },
+    {
+        "nom": "Djékanou",
+        "region": "Lacs ",
+        "code": "DJÉ"
+    },
+    {
+        "nom": "Djibrosso",
+        "region": "Worodougou",
+        "code": "DJI"
+    },
+    {
+        "nom": "Doropo",
+        "region": "Zanzan",
+        "code": "DOR"
+    },
+    {
+        "nom": "Dualla",
+        "region": "Worodougou",
+        "code": "DUA"
+    },
+    {
+        "nom": "Duékoué",
+        "region": "Moyen Cavally",
+        "code": "DUÉ"
+    },
+    {
+        "nom": "Ettrokro",
+        "region": "N'zi Comoe",
+        "code": "ETT"
+    },
+    {
+        "nom": "Etuéboué",
+        "region": "Sud-comoe",
+        "code": "ETU"
+    },
+    {
+        "nom": "Facobly",
+        "region": "Montagnes",
+        "code": "FAC"
+    },
+    {
+        "nom": "Ferkessedougou",
+        "region": "Savanes",
+        "code": "FER"
+    },
+    {
+        "nom": "Foumbolo",
+        "region": "Vallee Du Bandama",
+        "code": "FOU"
+    },
+    {
+        "nom": "Fresco",
+        "region": " Sud-bandama",
+        "code": "FRE"
+    },
+    {
+        "nom": "Fronan",
+        "region": "Vallee Du Bandama",
+        "code": "FRO"
+    },
+    {
+        "nom": "Gagnoa",
+        "region": "Fromager",
+        "code": "GAG"
+    },
+    {
+        "nom": "Gboguhé",
+        "region": "Haut-sassandra",
+        "code": "GBO"
+    },
+    {
+        "nom": "Gbon",
+        "region": "Savanes",
+        "code": "GBO"
+    },
+    {
+        "nom": "Gbonné",
+        "region": "Montagnes",
+        "code": "GBO"
+    },
+    {
+        "nom": "Gohitafla",
+        "region": "Marahoue",
+        "code": "GOH"
+    },
+    {
+        "nom": "Goulia",
+        "region": "Denguele",
+        "code": "GOU"
+    },
+    {
+        "nom": "Grabo",
+        "region": " Bas-sassandra",
+        "code": "GRA"
+    },
+    {
+        "nom": "Grand-Bassam",
+        "region": "Sud-comoe",
+        "code": "GRA"
+    },
+    {
+        "nom": "Grand-Béréby",
+        "region": " Bas-sassandra",
+        "code": "GRA"
+    },
+    {
+        "nom": "Grand-Lahou",
+        "region": "Lagunes",
+        "code": "GRA"
+    },
+    {
+        "nom": "Grand-Zattry",
+        "region": " Bas-sassandra",
+        "code": "GRA"
+    },
+    {
+        "nom": "Guibéroua",
+        "region": "Fromager",
+        "code": "GUI"
+    },
+    {
+        "nom": "Guiembé",
+        "region": "Savanes",
+        "code": "GUI"
+    },
+    {
+        "nom": "Guiglo",
+        "region": "Moyen Cavally",
+        "code": "GUI"
+    },
+    {
+        "nom": "Guintéguéla",
+        "region": "Baffing",
+        "code": "GUI"
+    },
+    {
+        "nom": "Guitry",
+        "region": " Sud-bandama",
+        "code": "GUI"
+    },
+    {
+        "nom": "Hiré",
+        "region": " Sud-bandama",
+        "code": "HIR"
+    },
+    {
+        "nom": "Issia",
+        "region": "Haut-sassandra",
+        "code": "ISS"
+    },
+    {
+        "nom": "Jacqueville",
+        "region": "Lagunes",
+        "code": "JAC"
+    },
+    {
+        "nom": "Kanakono",
+        "region": "Savanes",
+        "code": "KAN"
+    },
+    {
+        "nom": "Kani",
+        "region": "Worodougou",
+        "code": "KAN"
+    },
+    {
+        "nom": "Kaniasso",
+        "region": "Denguele",
+        "code": "KAN"
+    },
+    {
+        "nom": "Karakoro",
+        "region": "Savanes",
+        "code": "KAR"
+    },
+    {
+        "nom": "Kasséré",
+        "region": "Savanes",
+        "code": "KAS"
+    },
+    {
+        "nom": "Katiola",
+        "region": "Vallee Du Bandama",
+        "code": "KAT"
+    },
+    {
+        "nom": "Koffi-amonkro",
+        "region": "N'zi Comoe",
+        "code": "KOF"
+    },
+    {
+        "nom": "Kokoumbo",
+        "region": "Lacs ",
+        "code": "KOK"
+    },
+    {
+        "nom": "Kolia",
+        "region": "Savanes",
+        "code": "KOL"
+    },
+    {
+        "nom": "Komborodougou",
+        "region": "Savanes",
+        "code": "KOM"
+    },
+    {
+        "nom": "Kong",
+        "region": "Savanes",
+        "code": "KON"
+    },
+    {
+        "nom": "Kongasso",
+        "region": "Worodougou",
+        "code": "KON"
+    },
+    {
+        "nom": "Koonan",
+        "region": "Baffing",
+        "code": "KOO"
+    },
+    {
+        "nom": "Korhogo",
+        "region": "Savanes",
+        "code": "KOR"
+    },
+    {
+        "nom": "Koro",
+        "region": "Baffing",
+        "code": "KOR"
+    },
+    {
+        "nom": "Kouassi-datekro",
+        "region": "Zanzan",
+        "code": "KOU"
+    },
+    {
+        "nom": "Kouassi-Kouassikro",
+        "region": "N'zi Comoe",
+        "code": "KOU"
+    },
+    {
+        "nom": "Kouibly",
+        "region": "Montagnes",
+        "code": "KOU"
+    },
+    {
+        "nom": "Koumassi",
+        "region": "Lagunes",
+        "code": "KOU"
+    },
+    {
+        "nom": "Koumbala",
+        "region": "Savanes",
+        "code": "KOU"
+    },
+    {
+        "nom": "Kounahiri",
+        "region": "Worodougou",
+        "code": "KOU"
+    },
+    {
+        "nom": "Kouto",
+        "region": "Savanes",
+        "code": "KOU"
+    },
+    {
+        "nom": "Lakota",
+        "region": " Sud-bandama",
+        "code": "LAK"
+    },
+    {
+        "nom": "Logoualé",
+        "region": "Montagnes",
+        "code": "LOG"
+    },
+    {
+        "nom": "M'bahiakro",
+        "region": "N'zi Comoe",
+        "code": "M'B"
+    },
+    {
+        "nom": "M'batto",
+        "region": "N'zi Comoe",
+        "code": "M'B"
+    },
+    {
+        "nom": "M'bengué",
+        "region": "Savanes",
+        "code": "M'B"
+    },
+    {
+        "nom": "Madinani",
+        "region": "Denguele",
+        "code": "MAD"
+    },
+    {
+        "nom": "Maféré",
+        "region": "Sud-comoe",
+        "code": "MAF"
+    },
+    {
+        "nom": "Man",
+        "region": "Montagnes",
+        "code": "MAN"
+    },
+    {
+        "nom": "Mankono",
+        "region": "Worodougou",
+        "code": "MAN"
+    },
+    {
+        "nom": "Marandallah",
+        "region": "Worodougou",
+        "code": "MAR"
+    },
+    {
+        "nom": "Marcory",
+        "region": "Lagunes",
+        "code": "MAR"
+    },
+    {
+        "nom": "Massala",
+        "region": "Worodougou",
+        "code": "MAS"
+    },
+    {
+        "nom": "Méagui",
+        "region": " Bas-sassandra",
+        "code": "MÉA"
+    },
+    {
+        "nom": "Minignan",
+        "region": "Denguele",
+        "code": "MIN"
+    },
+    {
+        "nom": "Morondo",
+        "region": "Worodougou",
+        "code": "MOR"
+    },
+    {
+        "nom": "Napiélédougou",
+        "region": "Savanes",
+        "code": "NAP"
+    },
+    {
+        "nom": "Nassian",
+        "region": "Zanzan",
+        "code": "NAS"
+    },
+    {
+        "nom": "Niablé",
+        "region": "Moyen Comoe  ",
+        "code": "NIA"
+    },
+    {
+        "nom": "Niakaramandougou",
+        "region": "Vallee Du Bandama",
+        "code": "NIA"
+    },
+    {
+        "nom": "Niellé",
+        "region": "Savanes",
+        "code": "NIE"
+    },
+    {
+        "nom": "Niofoin",
+        "region": "Savanes",
+        "code": "NIO"
+    },
+    {
+        "nom": "Odienné",
+        "region": "Denguele",
+        "code": "ODI"
+    },
+    {
+        "nom": "Ouangolodougou",
+        "region": "Savanes",
+        "code": "OUA"
+    },
+    {
+        "nom": "Ouaninou",
+        "region": "Baffing",
+        "code": "OUA"
+    },
+    {
+        "nom": "Ouellé",
+        "region": "N'zi Comoe",
+        "code": "OUE"
+    },
+    {
+        "nom": "Oumé",
+        "region": "Fromager",
+        "code": "OUM"
+    },
+    {
+        "nom": "Ouragahio",
+        "region": "Fromager",
+        "code": "OUR"
+    },
+    {
+        "nom": "Plateau",
+        "region": "Lagunes",
+        "code": "PLA"
+    },
+    {
+        "nom": "Port-Bouët",
+        "region": "Lagunes",
+        "code": "POR"
+    },
+    {
+        "nom": "Prikro",
+        "region": "N'zi Comoe",
+        "code": "PRI"
+    },
+    {
+        "nom": "Rubino",
+        "region": "Agneby",
+        "code": "RUB"
+    },
+    {
+        "nom": "Saïoua",
+        "region": "Haut-sassandra",
+        "code": "SAÏ"
+    },
+    {
+        "nom": "Sakassou",
+        "region": "Vallee Du Bandama",
+        "code": "SAK"
+    },
+    {
+        "nom": "Samatiguila",
+        "region": "Denguele",
+        "code": "SAM"
+    },
+    {
+        "nom": "San-Pédro",
+        "region": " Bas-sassandra",
+        "code": "SAN"
+    },
+    {
+        "nom": "Sandégué",
+        "region": "Zanzan",
+        "code": "SAN"
+    },
+    {
+        "nom": "Sangouiné",
+        "region": "Montagnes",
+        "code": "SAN"
+    },
+    {
+        "nom": "Sarhala",
+        "region": "Worodougou",
+        "code": "SAR"
+    },
+    {
+        "nom": "Sassandra",
+        "region": " Bas-sassandra",
+        "code": "SAS"
+    },
+    {
+        "nom": "Satama-Sokoro",
+        "region": "Vallee Du Bandama",
+        "code": "SAT"
+    },
+    {
+        "nom": "Satama-Sokouro",
+        "region": "Vallee Du Bandama",
+        "code": "SAT"
+    },
+    {
+        "nom": "Seguela",
+        "region": "Worodougou",
+        "code": "SEG"
+    },
+    {
+        "nom": "Séguélon",
+        "region": "Denguele",
+        "code": "SÉG"
+    },
+    {
+        "nom": "Seydougou",
+        "region": "Denguele",
+        "code": "SEY"
+    },
+    {
+        "nom": "Sifié",
+        "region": "Worodougou",
+        "code": "SIF"
+    },
+    {
+        "nom": "Sikensi",
+        "region": "Lagunes",
+        "code": "SIK"
+    },
+    {
+        "nom": "Sinematiali",
+        "region": "Savanes",
+        "code": "SIN"
+    },
+    {
+        "nom": "Sinfra",
+        "region": "Marahoue",
+        "code": "SIN"
+    },
+    {
+        "nom": "Sipilou",
+        "region": "Montagnes",
+        "code": "SIP"
+    },
+    {
+        "nom": "Sirasso",
+        "region": "Savanes",
+        "code": "SIR"
+    },
+    {
+        "nom": "Songon",
+        "region": "Lagunes",
+        "code": "SON"
+    },
+    {
+        "nom": "Soubré",
+        "region": " Bas-sassandra",
+        "code": "SOU"
+    },
+    {
+        "nom": "Taabo",
+        "region": "Lagunes",
+        "code": "TAA"
+    },
+    {
+        "nom": "Tabou",
+        "region": " Bas-sassandra",
+        "code": "TAB"
+    },
+    {
+        "nom": "Tafiré",
+        "region": "Vallee Du Bandama",
+        "code": "TAF"
+    },
+    {
+        "nom": "Taï",
+        "region": "Moyen Cavally",
+        "code": "TAÏ"
+    },
+    {
+        "nom": "Tanda",
+        "region": "Zanzan",
+        "code": "TAN"
+    },
+    {
+        "nom": "Tehini",
+        "region": "Zanzan",
+        "code": "TEH"
+    },
+    {
+        "nom": "Tengréla",
+        "region": "Savanes",
+        "code": "TEN"
+    },
+    {
+        "nom": "Tiapoum",
+        "region": "Sud-comoe",
+        "code": "TIA"
+    },
+    {
+        "nom": "Tiassalé",
+        "region": "Lagunes",
+        "code": "TIA"
+    },
+    {
+        "nom": "Tié-N’diekro",
+        "region": "Lacs ",
+        "code": "TIÉ"
+    },
+    {
+        "nom": "Tiébissou",
+        "region": "Lacs ",
+        "code": "TIÉ"
+    },
+    {
+        "nom": "Tiémé",
+        "region": "Denguele",
+        "code": "TIÉ"
+    },
+    {
+        "nom": "Tiemelékro",
+        "region": "N'zi Comoe",
+        "code": "TIE"
+    },
+    {
+        "nom": "Tieningboue",
+        "region": "Worodougou",
+        "code": "TIE"
+    },
+    {
+        "nom": "Tienko",
+        "region": "Denguele",
+        "code": "TIE"
+    },
+    {
+        "nom": "Tioroniaradougou",
+        "region": "Savanes",
+        "code": "TIO"
+    },
+    {
+        "nom": "Tortiya",
+        "region": "Vallee Du Bandama",
+        "code": "TOR"
+    },
+    {
+        "nom": "Touba",
+        "region": "Baffing",
+        "code": "TOU"
+    },
+    {
+        "nom": "Toulepleu",
+        "region": "Moyen Cavally",
+        "code": "TOU"
+    },
+    {
+        "nom": "Toumodi",
+        "region": "Lacs ",
+        "code": "TOU"
+    },
+    {
+        "nom": "Transua",
+        "region": "Zanzan",
+        "code": "TRA"
+    },
+    {
+        "nom": "Treichville",
+        "region": "Lagunes",
+        "code": "TRE"
+    },
+    {
+        "nom": "Vavoua",
+        "region": "Haut-sassandra",
+        "code": "VAV"
+    },
+    {
+        "nom": "Worofla",
+        "region": "Worodougou",
+        "code": "WOR"
+    },
+    {
+        "nom": "Yakassé-Attobrou",
+        "region": "Agneby",
+        "code": "YAK"
+    },
+    {
+        "nom": "Yamoussoukro",
+        "region": "Lacs ",
+        "code": "YAM"
+    },
+    {
+        "nom": "Yopougon",
+        "region": "Lagunes",
+        "code": "YOP"
+    },
+    {
+        "nom": "Zikisso",
+        "region": " Sud-bandama",
+        "code": "ZIK"
+    },
+    {
+        "nom": "Zouan-Hounien",
+        "region": "Montagnes",
+        "code": "ZOU"
+    },
+    {
+        "nom": "Zoukougbeu",
+        "region": "Haut-sassandra",
+        "code": "ZOU"
+    },
+    {
+        "nom": "Zuénoula",
+        "region": "Marahoue",
+        "code": "ZUÉ"
+    }
+]

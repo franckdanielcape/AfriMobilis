@@ -1,0 +1,445 @@
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.header h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-main, #0f172a);
+    margin: 0 0 0.5rem 0;
+}
+
+.subtitle {
+    color: var(--text-muted, #64748b);
+    margin: 0;
+}
+
+/* Unauthorized */
+.unauthorized {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #dc2626;
+}
+
+/* Periode Selector */
+.periodeSelector {
+    display: flex;
+    gap: 0.5rem;
+    background: var(--surface-hover, #f1f5f9);
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+}
+
+.periodeBtn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: transparent;
+    color: var(--text-muted, #64748b);
+    font-size: 0.875rem;
+    cursor: pointer;
+    border-radius: 0.375rem;
+    transition: all 0.2s;
+}
+
+.periodeBtn:hover {
+    color: var(--text-main, #0f172a);
+}
+
+.periodeBtnActive {
+    background: white;
+    color: var(--primary-color, #2563eb);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* KPI Grid */
+.kpiGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.kpiCard {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: white;
+    border-radius: 0.75rem;
+    border: 1px solid var(--border-color, #e5e7eb);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.kpiCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.kpiRevenus {
+    border-left: 4px solid #10b981;
+}
+
+.kpiTaux {
+    border-left: 4px solid #3b82f6;
+}
+
+.kpiRetard {
+    border-left: 4px solid #f59e0b;
+}
+
+.kpiPannes {
+    border-left: 4px solid #dc2626;
+}
+
+.kpiVehicules {
+    border-left: 4px solid #8b5cf6;
+}
+
+.kpiBenefice {
+    border-left: 4px solid #059669;
+}
+
+.kpiIcon {
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--surface-hover, #f1f5f9);
+    border-radius: 0.75rem;
+}
+
+.kpiContent {
+    flex: 1;
+}
+
+.kpiValue {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main, #0f172a);
+}
+
+.kpiLabel {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--text-muted, #64748b);
+}
+
+.kpiSub {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-muted, #64748b);
+    margin-top: 0.25rem;
+}
+
+/* Progress Bar */
+.progressBar {
+    width: 100%;
+    height: 8px;
+    background: var(--surface-hover, #e2e8f0);
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    background: linear-gradient(90deg, #3b82f6, #10b981);
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+/* Section */
+.section {
+    background: white;
+    border-radius: 0.75rem;
+    border: 1px solid var(--border-color, #e5e7eb);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-main, #0f172a);
+    margin: 0 0 1.5rem 0;
+}
+
+/* Chart */
+.chartContainer {
+    padding: 1rem 0;
+}
+
+.noData {
+    text-align: center;
+    color: var(--text-muted, #64748b);
+    padding: 2rem;
+}
+
+.barChart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 250px;
+    gap: 1rem;
+    padding: 0 1rem;
+    border-bottom: 2px solid var(--border-color, #e5e7eb);
+}
+
+.barGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+    max-width: 100px;
+}
+
+.barWrapper {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    height: 200px;
+}
+
+.barAttendus {
+    width: 24px;
+    background: #cbd5e1;
+    border-radius: 4px 4px 0 0;
+    transition: height 0.5s ease;
+    min-height: 4px;
+}
+
+.barRecus {
+    width: 24px;
+    background: #3b82f6;
+    border-radius: 4px 4px 0 0;
+    transition: height 0.5s ease;
+    min-height: 4px;
+}
+
+.barLabel {
+    font-size: 0.75rem;
+    color: var(--text-muted, #64748b);
+    text-align: center;
+}
+
+.barRetard {
+    font-size: 0.625rem;
+    color: #dc2626;
+}
+
+.chartLegend {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+}
+
+.chartLegend span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.legendAttendus {
+    width: 16px;
+    height: 16px;
+    background: #cbd5e1;
+    border-radius: 2px;
+}
+
+.legendRecus {
+    width: 16px;
+    height: 16px;
+    background: #3b82f6;
+    border-radius: 2px;
+}
+
+/* Table */
+.tableContainer {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    background: var(--surface-hover, #f8fafc);
+    padding: 0.75rem;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted, #64748b);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.table td {
+    padding: 1rem 0.75rem;
+    border-top: 1px solid var(--border-color, #e5e7eb);
+    font-size: 0.875rem;
+}
+
+.table tr:hover {
+    background: var(--surface-hover, #f8fafc);
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.125rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.625rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.badgeSuccess {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.badgeWarning {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.success {
+    color: #059669;
+    font-weight: 500;
+}
+
+.warning {
+    color: #d97706;
+    font-weight: 500;
+}
+
+.danger {
+    color: #dc2626;
+    font-weight: 500;
+}
+
+.tauxCell {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.miniProgress {
+    width: 60px;
+    height: 4px;
+    background: var(--surface-hover, #e2e8f0);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.miniProgressFill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+/* Pannes Grid */
+.pannesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.panneCard {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: var(--surface-hover, #f8fafc);
+    border-radius: 0.5rem;
+    border-left: 4px solid #dc2626;
+}
+
+.panneType {
+    font-weight: 600;
+    color: var(--text-main, #0f172a);
+    text-transform: capitalize;
+}
+
+.panneNombre {
+    font-size: 0.875rem;
+    color: var(--text-muted, #64748b);
+}
+
+.panneCout {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #dc2626;
+    margin-top: 0.25rem;
+}
+
+/* Loading */
+.loading,
+.empty {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--text-muted, #64748b);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .periodeSelector {
+        width: 100%;
+        justify-content: stretch;
+    }
+
+    .periodeBtn {
+        flex: 1;
+        text-align: center;
+    }
+
+    .kpiGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .barChart {
+        height: 180px;
+    }
+
+    .barWrapper {
+        height: 140px;
+    }
+
+    .barAttendus,
+    .barRecus {
+        width: 16px;
+    }
+
+    .table {
+        font-size: 0.75rem;
+    }
+
+    .table th,
+    .table td {
+        padding: 0.5rem;
+    }
+}
