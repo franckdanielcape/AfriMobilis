@@ -1,58 +1,41 @@
 @echo off
 chcp 65001 >nul
-echo =====================================================
-echo  🚀 DEMARRAGE AFRIMOBILIS - PROCESS COMPLET
-echo =====================================================
+echo 🚀 Démarrage d'AfriMobilis...
 echo.
 
-:: Vérifier si node_modules existe
-if not exist "node_modules" (
-    echo 📦 Installation des dépendances...
-    call npm install
-    if errorlevel 1 (
-        echo ❌ Erreur lors de l'installation
-        pause
-        exit /b 1
-    )
+:: Vérifier si les ports sont libres
+echo 📡 Vérification des ports...
+netstat -ano | findstr :3000 >nul && (
+    echo ⚠️  Port 3000 déjà utilisé. Arrêt du processus...
+    for /f "tokens=5" %%a in ('netstat -ano ^| findstr :3000') do taskkill /F /PID %%a 2>nul
 )
-
-echo ✅ Dépendances OK
-echo.
-
-:: Vérifier la configuration
-echo 🔍 Vérification de la configuration Supabase...
-if exist "apps\web\.env.local" (
-    echo ✅ Fichier .env.local trouvé
-    findstr /C:"NEXT_PUBLIC_SUPABASE_URL" "apps\web\.env.local" >nul
-    if errorlevel 1 (
-        echo ⚠️  SUPABASE_URL non trouvé
-    ) else (
-        echo ✅ Configuration Supabase OK
-    )
-) else (
-    echo ❌ Fichier .env.local manquant
-    pause
-    exit /b 1
+netstat -ano | findstr :4000 >nul && (
+    echo ⚠️  Port 4000 déjà utilisé. Arrêt du processus...
+    for /f "tokens=5" %%a in ('netstat -ano ^| findstr :4000') do taskkill /F /PID %%a 2>nul
 )
 
 echo.
-echo =====================================================
-echo  🌐 CONNEXION SUPABASE CONFIGUREE:
-echo     URL: https://fqtzxijhqxnpwchgoshm.supabase.co
-echo =====================================================
+echo ✅ Ports libérés!
 echo.
 
-:: Démarrer le serveur
-echo 🚀 Démarrage du serveur Next.js...
-echo ⏳ Cela peut prendre quelques secondes...
-echo.
-echo 📱 Une fois démarré, ouvrez : http://localhost:3000
-echo 🔑 Identifiants de connexion:
-echo    Email: franckdanielcape@gmail.com
-echo    Mot de passe: (celui que vous avez défini dans Supabase)
-echo.
-echo =====================================================
+:: Démarrer l'API
+echo 🔧 Démarrage de l'API (Port 4000)...
+start "AfriMobilis API" cmd /k "cd apps\api && npm run dev"
 
-npm run dev
+:: Attendre que l'API démarre
+timeout /t 3 /nobreak >nul
 
+:: Démarrer le Web
+echo 🌐 Démarrage du Frontend (Port 3000)...
+start "AfriMobilis Web" cmd /k "cd apps\web && npm run dev"
+
+echo.
+echo ✅ Serveurs démarrés!
+echo.
+echo 📱 Frontend: http://localhost:3000
+echo 🔌 API: http://localhost:4000
+echo.
+echo 📝 Logs disponibles dans les fenêtres ouvertes
+echo 🛑 Pour arrêter: fermer les fenêtres ou exécuter stop-all.bat
+echo.
 pause
