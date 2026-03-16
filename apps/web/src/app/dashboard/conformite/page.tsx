@@ -137,7 +137,7 @@ export default function ConformitePage() {
                                                 ...prev, 
                                                 type_document: 'Visite Technique',
                                                 numero_document: result.numeroCarte || prev.numero_document,
-                                                date_expiration: result.dateExpiration
+                                                date_expiration: result.dateExpiration || ''
                                             }));
                                         }
                                     }}

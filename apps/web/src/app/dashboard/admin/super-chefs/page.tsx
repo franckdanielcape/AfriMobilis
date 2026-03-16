@@ -14,8 +14,8 @@ interface Ville {
 interface VilleDataFromSupabase {
     id: string;
     nom: string;
-    pays?: { nom: string } | null;
-    super_chef?: { prenom: string; nom: string } | null;
+    pays?: { nom: string }[] | null;
+    super_chef?: { prenom: string; nom: string }[] | null;
 }
 
 interface ErrorWithMessage {
@@ -79,8 +79,8 @@ export default function SuperChefsPage() {
             const villesFormatted = data.map((v: VilleDataFromSupabase) => ({
                 id: v.id,
                 nom: v.nom,
-                pays_nom: v.pays?.nom || 'Inconnu',
-                super_chef_nom: v.super_chef ? `${v.super_chef.prenom} ${v.super_chef.nom}` : null
+                pays_nom: v.pays?.[0]?.nom || 'Inconnu',
+                super_chef_nom: v.super_chef ? `${v.super_chef[0]?.prenom} ${v.super_chef[0]?.nom}` : null
             }));
             setVilles(villesFormatted);
         }

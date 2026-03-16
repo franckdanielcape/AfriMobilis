@@ -124,8 +124,8 @@ export default function ChefsLignePage() {
             const formattedChefs = chefsData.map((chef: ChefData) => ({
                 ...chef,
                 telephone: chef.telephone || chef.phone || '-',
-                syndicat_nom: syndicatsMap[chef.syndicat_id]?.nom || 'Non assigné',
-                ville: syndicatsMap[chef.syndicat_id]?.zone || '-',
+                syndicat_nom: syndicatsMap[chef.syndicat_id || '']?.nom || 'Non assigné',
+                ville: syndicatsMap[chef.syndicat_id || '']?.zone || '-',
                 status: chef.status || 'actif'
             }));
 

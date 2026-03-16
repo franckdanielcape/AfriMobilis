@@ -40,6 +40,7 @@ export async function getChefLigneStats(zoneId?: string) {
         interface StatItem {
         id: string;
         created_at?: string;
+        date_expiration?: string;
         [key: string]: unknown;
     }
         let versements: StatItem[] = [];
@@ -74,13 +75,14 @@ export async function getChefLigneStats(zoneId?: string) {
         }
 
         const now = new Date();
-        const conformiteAJour = documents?.filter(d => new Date(d.date_expiration) > now).length || 0;
-        const conformiteExpiree = documents?.filter(d => new Date(d.date_expiration) < now).length || 0;
+        const conformiteAJour = documents?.filter(d => d.date_expiration && new Date(d.date_expiration) > now).length || 0;
+        const conformiteExpiree = documents?.filter(d => d.date_expiration && new Date(d.date_expiration) < now).length || 0;
         
         const dans30Jours = new Date();
         dans30Jours.setDate(dans30Jours.getDate() + 30);
         
         const alertesConformite = documents?.filter(d => {
+            if (!d.date_expiration) return false;
             const exp = new Date(d.date_expiration);
             return exp > now && exp <= dans30Jours;
         }).length || 0;
@@ -109,7 +111,7 @@ export async function getChefLigneStats(zoneId?: string) {
             // Versements
             versementsMois: versements?.filter(v => v.statut === 'recu').length || 0,
             versementsRetard: versements?.filter(v => v.statut === 'en_retard').length || 0,
-            totalVersements: versements?.reduce((acc, v) => acc + (v.montant || 0), 0) || 0,
+            totalVersements: versements?.reduce((acc: number, v: any) => acc + (v.montant || 0), 0) || 0,
             
             // Incidents & Sanctions
             incidentsMois: incidents?.length || 0,

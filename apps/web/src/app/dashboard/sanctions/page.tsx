@@ -129,7 +129,7 @@ export default function SanctionsPage() {
             case 'suspension':
                 return <span className={styles.badgeSuspension}>Suspension</span>;
             default:
-                return <span>{type}</span>;
+                return <span>{type_sanction}</span>;
         }
     };
 

@@ -98,7 +98,7 @@ export default function DashboardMarketplacePage() {
                 .or(`auteur_id.eq.${userId},acheteur_id.eq.${userId}`)
             // NOTE: Complex RLS might limit this if not well formed, but as author or buyer we should see it
 
-            if (confs) setMesConfirmations(confs as Confirmation[]);
+            if (confs) setMesConfirmations(confs as unknown as Confirmation[]);
 
             // If user is owner, fetch their cars for the sell dropdown
             if (profile?.role === 'proprietaire') {

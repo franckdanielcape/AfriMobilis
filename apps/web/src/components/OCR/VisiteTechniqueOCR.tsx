@@ -5,7 +5,7 @@ import Tesseract from 'tesseract.js';
 import { Button } from '@/components/ui';
 import styles from './ocr.module.css';
 
-interface OCRResult {
+export interface OCRResult {
     dateExpiration?: string;
     numeroCarte?: string;
     confiance: number;

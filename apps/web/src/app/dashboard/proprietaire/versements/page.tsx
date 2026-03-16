@@ -54,7 +54,7 @@ export default function ProprietaireVersements() {
       const { data: vehicules } = await supabase
         .from('vehicules')
         .select('id')
-        .eq('proprietaire_id', profile.id);
+        .eq('proprietaire_id', profile?.id);
 
       const vehiculeIds = vehicules?.map(v => v.id) || [];
       

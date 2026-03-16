@@ -1,5 +1,6 @@
 {
   "name": "afrimobilis-monorepo",
+  "version": "1.0.0",
   "private": true,
   "packageManager": "npm@9.8.1",
   "workspaces": [
@@ -10,7 +11,10 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "clean": "turbo run clean"
+    "test": "turbo run test",
+    "test:coverage": "turbo run test:coverage",
+    "clean": "turbo run clean",
+    "typecheck": "turbo run typecheck"
   },
   "devDependencies": {
     "turbo": "latest"

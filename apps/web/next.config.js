@@ -4,12 +4,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
   // Configuration pour stabilité en développement
   webpack: (config, { dev, isServer }) => {
     // Désactiver le cache persistant en dev pour éviter les problèmes HMR

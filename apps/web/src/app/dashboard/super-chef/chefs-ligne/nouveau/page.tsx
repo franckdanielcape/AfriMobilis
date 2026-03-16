@@ -39,7 +39,7 @@ export default function NouveauChefDeLignePage() {
             }
 
             setVilleId(profile.ville_id);
-            setVilleNom(profile.villes?.nom || 'la ville');
+            setVilleNom((profile.villes as any)?.[0]?.nom || 'la ville');
         };
 
         fetchData();

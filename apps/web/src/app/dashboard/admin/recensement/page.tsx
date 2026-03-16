@@ -135,7 +135,7 @@ export default function RecensementPage() {
 
         } catch (e: unknown) {
             const errorMessage = e instanceof Error ? e.message : 'Erreur';
-            setMsg('❌ ' + (e.message || 'Erreur'));
+            setMsg('❌ ' + errorMessage);
         } finally {
             setLoading(false);
         }

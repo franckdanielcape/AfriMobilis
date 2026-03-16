@@ -59,7 +59,7 @@ export async function GET(request: NextRequest) {
         }
 
         // Agréger les stats par agent
-        const agentsStats = statsAgents?.reduce((acc: Record<string, unknown>, curr) => {
+        const agentsStats = statsAgents?.reduce((acc: Record<string, any>, curr: any) => {
             const key = curr.agent_id;
             if (!acc[key]) {
                 acc[key] = {

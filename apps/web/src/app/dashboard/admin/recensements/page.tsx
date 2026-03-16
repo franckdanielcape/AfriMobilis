@@ -59,7 +59,7 @@ export default function RegistreRecensementPage() {
                 console.error("Erreur de récupération des recensements:", error);
             }
             if (data) {
-                setRecensements(data);
+                setRecensements(data as any);
             }
             setLoading(false);
         };
@@ -160,7 +160,7 @@ export default function RegistreRecensementPage() {
                                                     background: r.statut === 'actif' ? 'rgba(16, 185, 129, 0.1)' : 'rgba(239, 68, 68, 0.1)',
                                                     color: r.statut === 'actif' ? '#10b981' : '#ef4444'
                                                 }}>
-                                                    {r.statut.toUpperCase()}
+                                                    {r.statut?.toUpperCase() || 'N/A'}
                                                 </span>
                                             </td>
                                             <td style={{ padding: '1rem' }}>
@@ -184,7 +184,7 @@ export default function RegistreRecensementPage() {
                                                 </div>
                                             </td>
                                             <td style={{ padding: '1rem', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
-                                                {new Date(r.created_at).toLocaleDateString()}
+                                                {r.created_at ? new Date(r.created_at).toLocaleDateString() : '-'}
                                             </td>
                                         </tr>
                                     );

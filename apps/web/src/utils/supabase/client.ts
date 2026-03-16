@@ -39,13 +39,14 @@ export async function safeSupabaseQuery<T>(
         const result = await queryFn();
         return result;
     } catch (err: unknown) {
+        const error = err as Error;
         // Détection d'erreurs réseau
-        if (err.message?.includes('network') || err.message?.includes('fetch') || err.name === 'TypeError') {
+        if (error.message?.includes('network') || error.message?.includes('fetch') || error.name === 'TypeError') {
             return { 
                 data: fallbackValue, 
-                error: { message: 'Erreur réseau. Vérifiez votre connexion.', code: 'NETWORK_ERROR' } 
+                error: new Error('Erreur réseau. Vérifiez votre connexion.') 
             };
         }
-        return { data: fallbackValue, error: err };
+        return { data: fallbackValue, error: error };
     }
 }

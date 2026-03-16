@@ -50,7 +50,7 @@ export default function ProprietaireVehicules() {
       const { data: vehiculesData, error: vError } = await supabase
         .from('vehicules')
         .select('*')
-        .eq('proprietaire_id', profile.id)
+        .eq('proprietaire_id', profile?.id)
         .order('created_at', { ascending: false });
 
       if (vError) throw vError;
@@ -71,7 +71,7 @@ export default function ProprietaireVehicules() {
 
         if (!aError && affectations) {
           const chauffeursMap: Record<string, ChauffeurAffecte> = {};
-          affectations.forEach((a: { vehicule_id: string }) => {
+          affectations.forEach((a: any) => {
             chauffeursMap[a.vehicule_id] = a;
           });
           setChauffeurs(chauffeursMap);

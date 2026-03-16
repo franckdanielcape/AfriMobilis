@@ -126,7 +126,7 @@ function ChauffeursGlobauxContent() {
                                             </span>
                                         </td>
                                         <td style={{ padding: '1rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-                                            {new Date(user.created_at).toLocaleDateString()}
+                                            {user.created_at ? new Date(user.created_at).toLocaleDateString() : '-'}
                                         </td>
                                     </tr>
                                 ))}

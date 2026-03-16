@@ -31,7 +31,7 @@ function TransactionsGlobalesContent() {
             // Since `versements` might not have direct `syndicat_id` in the MVP, we filter if possible.
             // Wait, we can't easily filter versements by Syndicat because versements are tied to affectations, which are tied to vehicules.
             // For the scope of the MVP filter, if we don't have a direct link, we'll try to fetch vehicules first, then versements for those vehicules.
-            const _vehiculesIds: string[] | null = null;
+            let vehiculesIds: string[] = [];
 
             if (ville || pays) {
                 let sQuery = supabase.from('syndicats').select('id');
