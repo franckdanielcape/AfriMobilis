@@ -34,6 +34,7 @@ const PROPRIETAIRE_NAV = [
     { label: '👨‍✈️ Mes Chauffeurs', href: '/dashboard/proprietaire/chauffeurs' },
     { label: '💳 Versements', href: '/dashboard/proprietaire/versements' },
     { label: '🔧 Pannes', href: '/dashboard/proprietaire/pannes' },
+    { label: '💳 Paiement Visite', href: '/dashboard/paiement' },
 ];
 
 const CHAUFFEUR_NAV = [
@@ -66,6 +67,7 @@ const CHEF_LIGNE_NAV = [
     { label: '🚗 Véhicules', href: '/dashboard/vehicules' },
     { label: '💰 Versements', href: '/dashboard/versements' },
     { label: '📋 Conformité', href: '/dashboard/conformite' },
+    { label: '✅ Validation', href: '/dashboard/validation' },
 ];
 
 interface User {

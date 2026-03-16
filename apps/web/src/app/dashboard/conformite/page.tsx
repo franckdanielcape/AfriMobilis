@@ -3,6 +3,7 @@
 import { useLayoutEffect, useState } from 'react';
 import { supabase } from '@/utils/supabase/client';
 import { Button, Input } from '@/components/ui';
+import { VisiteTechniqueOCR, OCRResult } from '@/components/OCR';
 import styles from './conformite.module.css';
 
 interface Document {
@@ -37,8 +38,10 @@ export default function ConformitePage() {
     const [loading, setLoading] = useState(true);
     const [filter, setFilter] = useState('all'); // all | expire | bientot | valide
     const [isAdding, setIsAdding] = useState(false);
+    const [showOCR, setShowOCR] = useState(false);
     const [form, setForm] = useState({ vehicule_id: '', type_document: '', numero_document: '', date_expiration: '' });
     const [error, setError] = useState('');
+    const [ocrResult, setOcrResult] = useState<OCRResult | null>(null);
 
     const fetchData = async () => {
         setLoading(true);
@@ -106,6 +109,63 @@ export default function ConformitePage() {
             {isAdding && (
                 <div className={`${styles.addForm} glass-panel`}>
                     <h3>Nouveau document</h3>
+                    
+                    {/* Option OCR pour Visite Technique */}
+                    <div className={styles.ocrSection}>
+                        <div className={styles.ocrHeader}>
+                            <span>📷</span>
+                            <div>
+                                <strong>Scan automatique (OCR)</strong>
+                                <p>Pour les visites techniques, prenez une photo et nous extrairons automatiquement les informations</p>
+                            </div>
+                            <Button 
+                                variant="secondary" 
+                                onClick={() => setShowOCR(!showOCR)}
+                            >
+                                {showOCR ? 'Masquer' : 'Utiliser OCR'}
+                            </Button>
+                        </div>
+                        
+                        {showOCR && (
+                            <div className={styles.ocrContainer}>
+                                <VisiteTechniqueOCR
+                                    onResult={(result) => {
+                                        setOcrResult(result);
+                                        // Pré-remplir le formulaire
+                                        if (result.dateExpiration) {
+                                            setForm(prev => ({ 
+                                                ...prev, 
+                                                type_document: 'Visite Technique',
+                                                numero_document: result.numeroCarte || prev.numero_document,
+                                                date_expiration: result.dateExpiration
+                                            }));
+                                        }
+                                    }}
+                                    onError={(err) => setError(err)}
+                                />
+                                
+                                {ocrResult && (
+                                    <div className={styles.ocrResult}>
+                                        <h4>Résultat de l&apos;analyse</h4>
+                                        <div className={styles.resultField}>
+                                            <label>Date d&apos;expiration détectée:</label>
+                                            <strong>{ocrResult.dateExpiration ? new Date(ocrResult.dateExpiration).toLocaleDateString('fr-FR') : 'Non détectée'}</strong>
+                                        </div>
+                                        {ocrResult.numeroCarte && (
+                                            <div className={styles.resultField}>
+                                                <label>Numéro de carte:</label>
+                                                <strong>{ocrResult.numeroCarte}</strong>
+                                            </div>
+                                        )}
+                                        <div className={styles.confiance}>
+                                            Confiance: {ocrResult.confiance.toFixed(1)}%
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
+                        )}
+                    </div>
+
                     <form onSubmit={handleAdd} className={styles.formGrid}>
                         <div>
                             <label className={styles.label}>Véhicule</label>
@@ -114,7 +174,7 @@ export default function ConformitePage() {
                                 {vehicules.map(v => <option key={v.id} value={v.id}>{v.immatriculation}</option>)}
                             </select>
                         </div>
-                        <Input label="Type de Document" placeholder="ex: Assurance, Carte grise…" value={form.type_document} onChange={e => setForm({ ...form, type_document: e.target.value })} required fullWidth />
+                        <Input label="Type de Document" placeholder="ex: Assurance, Carte grise, Visite Technique…" value={form.type_document} onChange={e => setForm({ ...form, type_document: e.target.value })} required fullWidth />
                         <Input label="N° Document (optionnel)" placeholder="Numéro de référence" value={form.numero_document} onChange={e => setForm({ ...form, numero_document: e.target.value })} fullWidth />
                         <Input label="Date d&apos;expiration" type="date" value={form.date_expiration} onChange={e => setForm({ ...form, date_expiration: e.target.value })} required fullWidth />
                         <div className={styles.formActions}>
