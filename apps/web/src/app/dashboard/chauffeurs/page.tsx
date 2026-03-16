@@ -1,8 +1,10 @@
 'use client';
 
 import { useLayoutEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { supabase } from '@/utils/supabase/client';
 import { Button, Input } from '@/components/ui';
+import { useAuthGuard } from '@/hooks/useAuthGuard';
 import styles from '../vehicules/vehicules.module.css';
 
 interface Chauffeur {
@@ -15,10 +17,15 @@ interface Chauffeur {
 }
 
 export default function ChauffeursPage() {
+    const router = useRouter();
+    // Selon le CDC, seuls les Chefs de Ligne peuvent VOIR la liste des chauffeurs
+    // mais la CREATION est réservée au propriétaire
+    const { isLoading: authLoading, profile } = useAuthGuard({ 
+        requiredRole: ['chef_de_ligne', 'chef_ligne', 'admin_syndicat', 'super_chef_de_ligne', 'super_admin'] 
+    });
+    
     const [chauffeurs, setChauffeurs] = useState<Chauffeur[]>([]);
     const [loading, setLoading] = useState(true);
-    const [isAdding, setIsAdding] = useState(false);
-    const [form, setForm] = useState({ nom: '', prenom: '', telephone: '', email: '' });
     const [error, setError] = useState('');
 
     const fetchChauffeurs = async () => {
@@ -39,44 +46,27 @@ export default function ChauffeursPage() {
         return () => cancelAnimationFrame(frameId);
     }, []);
 
-    const handleAdd = async (e: React.FormEvent) => {
-        e.preventDefault();
-        setError('');
-        // For MVP: create the user via Supabase auth invite or direct insert
-        // Here we do a simplified insert into users with role=chauffeur (auth will be linked later)
-        const { error: err } = await supabase.from('profiles').insert([{
-            id: crypto.randomUUID(),
-            ...form,
-            role: 'chauffeur'
-        }]);
-        if (err) { setError(err.message); return; }
-        setIsAdding(false);
-        setForm({ nom: '', prenom: '', telephone: '', email: '' });
-        fetchChauffeurs();
-    };
+    // NOTE: Selon le CDC, la création de chauffeurs est réservée au PROPRIÉTAIRE
+    // Cette page est en lecture seule pour les Chefs de Ligne
+    // La création se fait via /dashboard/proprietaire/chauffeurs/nouveau
+
+    if (authLoading) return <div className={styles.emptyState}>Vérification des accès...</div>;
 
     return (
         <div className="fade-in">
             <div className={styles.header}>
                 <h2>Gestion des Chauffeurs</h2>
-                <Button onClick={() => setIsAdding(!isAdding)}>{isAdding ? 'Annuler' : '+ Enregistrer Chauffeur'}</Button>
+                {/* NOTE: Le bouton de création est SUPPRIMÉ car selon le CDC, 
+                    seul le PROPRIÉTAIRE peut créer des chauffeurs.
+                    La création se fait via /dashboard/proprietaire/chauffeurs/nouveau */}
             </div>
-
-            {isAdding && (
-                <div className={`${styles.createForm} glass-panel`}>
-                    <h3>Ajouter un chauffeur</h3>
-                    {error && <p style={{ color: 'var(--error)' }}>{error}</p>}
-                    <form onSubmit={handleAdd}>
-                        <div className={styles.formGrid}>
-                            <Input label="Nom" value={form.nom} onChange={e => setForm({ ...form, nom: e.target.value })} required fullWidth />
-                            <Input label="Prénom" value={form.prenom} onChange={e => setForm({ ...form, prenom: e.target.value })} required fullWidth />
-                            <Input label="Téléphone" value={form.telephone} onChange={e => setForm({ ...form, telephone: e.target.value })} fullWidth />
-                            <Input label="Email" type="email" value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} fullWidth />
-                        </div>
-                        <div className={styles.formActions}><Button type="submit">Enregistrer</Button></div>
-                    </form>
-                </div>
-            )}
+            
+            <div className="glass-panel" style={{ padding: '1rem', marginBottom: '1rem', background: 'rgba(245, 158, 11, 0.1)', border: '1px solid rgba(245, 158, 11, 0.3)' }}>
+                <p style={{ margin: 0, color: '#92400e', fontSize: '0.9rem' }}>
+                    💡 <strong>Information :</strong> Selon le règlement, les chauffeurs sont créés par les propriétaires de véhicules. 
+                    Cette page permet uniquement de consulter la liste des chauffeurs enregistrés.
+                </p>
+            </div>
 
             <div className={`${styles.tableContainer} glass-panel`}>
                 {loading ? <div className={styles.emptyState}>Chargement…</div> :
