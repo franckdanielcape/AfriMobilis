@@ -1,12 +1,13 @@
 {
   "version": 2,
   "name": "afrimobilis",
+  "framework": "nextjs",
   "buildCommand": "cd apps/web && npm install && npm run build",
   "outputDirectory": "apps/web/.next",
   "installCommand": "npm install",
-  "framework": "nextjs",
+  "devCommand": "cd apps/web && npm run dev",
   "env": {
-    "NEXT_PUBLIC_SUPABASE_URL": "@next_public_supabase_url",
-    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@next_public_supabase_anon_key"
+    "NEXT_PUBLIC_SUPABASE_URL": "https://fqtzxijhqxnpwchgoshm.supabase.co",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZxdHp4aWpocXhucHdjaGdvc2htIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIxNTAyMzYsImV4cCI6MjA4NzcyNjIzNn0.-7JMEiP-iNDQs5U1TyLar7TgDb6HhVZkJwVBAS-qFvo"
   }
 }
