@@ -1,28 +1,16 @@
 {
-  "name": "afrimobilis-monorepo",
+  "name": "afrimobilis",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "npm@9.8.1",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "test": "turbo run test",
-    "test:coverage": "turbo run test:coverage",
-    "clean": "turbo run clean",
-    "typecheck": "turbo run typecheck"
-  },
-  "devDependencies": {
-    "turbo": "latest"
-  },
-  "engines": {
-    "node": ">=18.0.0"
+    "dev": "cd apps/web && npm run dev",
+    "build": "cd apps/web && npm run build",
+    "start": "cd apps/web && npm start",
+    "install": "cd apps/web && npm install"
   },
   "dependencies": {
-    "xlsx": "^0.18.5"
+    "next": "^14.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
