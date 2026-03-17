@@ -1,0 +1,176 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: var(--space-4);
+}
+
+/* Abstract Backgrounds */
+.bgCircle1 {
+    position: absolute;
+    top: -10%;
+    left: -5%;
+    width: 50vw;
+    height: 50vw;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.bgCircle2 {
+    position: absolute;
+    bottom: -20%;
+    right: -10%;
+    width: 60vw;
+    height: 60vw;
+    background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.loginCard {
+    width: 100%;
+    max-width: 450px;
+    padding: var(--space-8);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: var(--space-8);
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: var(--space-4);
+}
+
+.logoHighlight {
+    color: var(--primary-color);
+}
+
+.title {
+    font-size: 1.875rem;
+    margin-bottom: var(--space-2);
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.passwordWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.passwordWrapper input {
+    width: 100%;
+    padding-right: 3rem;
+}
+
+.eyeButton {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: 0.25rem;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.eyeButton:hover {
+    opacity: 1;
+}
+
+.forgotPassword {
+    text-align: right;
+    font-size: 0.875rem;
+    margin-top: -0.5rem;
+}
+
+.forgotPassword a {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.forgotPassword a:hover {
+    text-decoration: underline;
+}
+
+.errorMessage {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: var(--error);
+    padding: var(--space-3);
+    border-radius: var(--radius-md);
+    font-size: 0.875rem;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.footer {
+    text-align: center;
+    margin-top: var(--space-6);
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.footer p {
+    margin: 0 0 var(--space-2) 0;
+}
+
+.registerOptions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+}
+
+.divider {
+    color: var(--border-color);
+}
+
+.registerLink {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.registerLink:hover {
+    text-decoration: underline;
+}
+
+.backLink {
+    color: var(--text-muted);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.backLink:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.registerLink:hover {
+    text-decoration: underline;
+}

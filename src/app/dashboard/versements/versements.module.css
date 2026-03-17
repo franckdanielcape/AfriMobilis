@@ -1,0 +1,158 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-4);
+}
+
+.header h2 {
+    font-size: 1.5rem;
+    font-family: var(--font-heading);
+}
+
+.summaryPills {
+    display: flex;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+    margin-bottom: var(--space-6);
+}
+
+.pill {
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-xl);
+    font-size: 0.875rem;
+}
+
+.pillGreen {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--success);
+}
+
+.pillRed {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--error);
+}
+
+.addForm {
+    padding: var(--space-6);
+    margin-bottom: var(--space-6);
+    border-left: 4px solid var(--primary-color);
+    animation: slide 0.3s ease-out;
+}
+
+.addForm h3 {
+    margin-bottom: var(--space-4);
+    font-size: 1.1rem;
+}
+
+@keyframes slide {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--space-4);
+    align-items: end;
+}
+
+.formActions {
+    display: flex;
+    align-items: flex-end;
+}
+
+.label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: var(--space-1);
+}
+
+.select {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    background: var(--surface-light);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-md);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    color: var(--text-main);
+}
+
+.select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.tableContainer {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table th {
+    padding: var(--space-4);
+    font-weight: 600;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--glass-border);
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.table td {
+    padding: var(--space-4);
+    border-bottom: 1px solid var(--glass-border);
+    vertical-align: middle;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+.badge {
+    padding: 4px 10px;
+    border-radius: var(--radius-xl);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.recu {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--success);
+}
+
+.attendu {
+    background: rgba(99, 102, 241, 0.1);
+    color: #6366f1;
+}
+
+.retard {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--error);
+}
+
+.litige {
+    background: rgba(245, 158, 11, 0.1);
+    color: var(--warning);
+}
+
+.empty {
+    padding: var(--space-12);
+    text-align: center;
+    color: var(--text-muted);
+}

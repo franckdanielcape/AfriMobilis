@@ -1,0 +1,78 @@
+.errorContainer {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+}
+
+.errorCard {
+    background: white;
+    border-radius: 16px;
+    padding: 2.5rem;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.errorIcon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.errorTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 0.75rem;
+}
+
+.errorMessage {
+    color: #6b7280;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.errorDetails {
+    margin: 1.5rem 0;
+    text-align: left;
+    background: #f9fafb;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.errorDetails summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #374151;
+    padding: 0.5rem 0;
+}
+
+.errorStack {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #1f2937;
+    color: #f3f4f6;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.errorActions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.errorHelp {
+    color: #9ca3af;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+}
