@@ -1,7 +1,7 @@
 ﻿import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 
-export function Register() {
+export default function Register() {
   const [formData, setFormData] = useState({
     nom: '',
     email: '',
