@@ -3,12 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint",
-    "prepare": "husky install",
-    "postinstall": "husky install"
+    "dev": "echo 'Run: cd apps/web-vite && npm run dev'",
+    "build": "echo 'Static files in apps/web/'",
+    "start": "echo 'Static files - no server needed'"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.98.0",

@@ -1,0 +1,4 @@
+# Ignorer tout sauf apps/web
+*
+!apps/web/**
+!.vercelignore
