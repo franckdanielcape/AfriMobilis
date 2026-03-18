@@ -1,0 +1,57 @@
+---
+const features = [
+  {
+    icon: "📊",
+    title: "Dashboard en temps réel",
+    description: "Suivez vos véhicules, versements et conformité en un coup d'œil. KPIs automatiques et alertes intelligentes."
+  },
+  {
+    icon: "💰",
+    title: "Gestion des versements",
+    description: "Suivi précis des versements attendus et reçus. Identifiez les retards et gérez les litiges facilement."
+  },
+  {
+    icon: "📄",
+    title: "Conformité documentaire",
+    description: "Visite technique, patente, assurance, carte de stationnement. Alertes J-30, J-7, J-1 automatiques."
+  },
+  {
+    icon: "🔧",
+    title: "Suivi des pannes",
+    description: "Déclaration et suivi des pannes par les chauffeurs. Historique complet des interventions."
+  },
+  {
+    icon: "⚠️",
+    title: "Sanctions & avertissements",
+    description: "Workflow de validation des sanctions. Niveaux progressifs : avertissement → suspension."
+  },
+  {
+    icon: "📱",
+    title: "Application mobile",
+    description: "Chauffeurs et agents terrain connectés. Notifications push, scan QR, mode hors-ligne."
+  }
+];
+---
+
+<section id="fonctionnalites" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+        Tout ce qu'il faut pour gérer votre flotte
+      </h2>
+      <p class="text-lg text-slate-600">
+        Une suite complète d'outils conçue spécifiquement pour les syndicats de taxis en Afrique
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {features.map((feature) => (
+        <div class="group p-6 rounded-2xl bg-slate-50 hover:bg-sky-50 transition border border-slate-100 hover:border-sky-200">
+          <div class="text-4xl mb-4">{feature.icon}</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">{feature.title}</h3>
+          <p class="text-slate-600 leading-relaxed">{feature.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
