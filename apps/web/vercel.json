@@ -1,4 +1,9 @@
 {
+  "version": 2,
+  "buildCommand": null,
+  "installCommand": null,
+  "framework": null,
+  "outputDirectory": ".",
   "routes": [
     { "src": "/app/(.*)", "dest": "/app/$1" },
     { "src": "/(.*)", "dest": "/marketing/$1" }
